@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Teryn Gianna Nuza | Multimedia Artist</title>
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#DB1374">
+<meta name="description" content="Portfolio of Teryn Gianna Nuza (Aria), a multimedia artist from Laguna, Philippines: photography, illustration, 3D, web and UI/UX, film, and content.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --hot:#DB1374;
+  --hot-deep:#B8105F;
+  --berry:#991E5A;
+  --blush:#EFC0DA;
+  --blush-2:#E8AACB;
+  --paper:#FFF4F9;
+  --lime:#DBE586;
+  --blue:#B9C9E7;
+  --surface:var(--paper);
+  --card:#FFFFFF;
+  --ink:#5E0F37;
+  --ink-soft:#7A2A55;
+  --line:#EFC0DA;
+  --display:"Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+  --body:"Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --script:"Pinyon Script", "Brush Script MT", cursive;
+  --wrap:min(1180px, 100% - 2.5rem);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --surface:#22051A; --card:#330A26; --ink:#FFE6F2; --ink-soft:#F2B8D6;
+    --blush:#4A0F33; --blush-2:#5A143F; --line:#6B1D4B; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --surface:#22051A; --card:#330A26; --ink:#FFE6F2; --ink-soft:#F2B8D6;
+  --blush:#4A0F33; --blush-2:#5A143F; --line:#6B1D4B; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
+body{margin:0;background:var(--surface);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6}
+img{max-width:100%;height:auto;display:block}
+[hidden]{display:none!important}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:6px}
+.wrap{width:var(--wrap);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:.95;margin:0;letter-spacing:-.02em}
+h2{font-size:clamp(2.4rem,6vw,4.6rem);font-weight:800}
+.script{font-family:var(--script);font-weight:400;letter-spacing:0;line-height:1}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--hot)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--hot);color:var(--paper)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:68px}
+.logo{font-family:var(--display);font-weight:800;font-size:1.3rem;text-decoration:none;letter-spacing:-.03em}
+.logo span{font-family:var(--script);font-weight:400;font-size:1.6rem;margin-left:.15rem}
+.nav{display:flex;gap:1.3rem;align-items:center}
+.nav a{text-decoration:none;font-weight:500}
+.nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.3rem;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid currentColor;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-solid{background:var(--berry);color:var(--paper);border-color:var(--berry)}
+.btn-lime{background:var(--lime);color:var(--berry);border-color:var(--lime)}
+@media (max-width:760px){.nav a:not(.btn){display:none}}
+
+/* hero */
+.hero{background:var(--hot);color:var(--paper);overflow:hidden;position:relative;
+  background-image:radial-gradient(circle,rgba(255,244,249,.16) 17%,transparent 18%),radial-gradient(circle,rgba(255,244,249,.16) 17%,transparent 18%);background-size:52px 52px;background-position:0 0,26px 26px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:2rem;align-items:center;padding-block:clamp(2.5rem,6vw,5rem) clamp(3rem,7vw,6rem)}
+.hello{font-size:clamp(2.6rem,6vw,4.5rem);color:var(--lime);display:block;margin-bottom:-.2em;transform:rotate(-6deg);transform-origin:left}
+.hero h1{font-size:clamp(4.2rem,13vw,10.5rem);font-weight:800;letter-spacing:-.05em;line-height:.82}
+.hero h1 .l2{display:block;padding-left:.35em}
+.hero p{max-width:40ch;font-size:1.2rem;color:var(--paper);font-weight:500;margin:1.6rem 0 1.8rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem}
+.hero .btn-ghost{color:var(--paper)}
+
+.frame{position:relative;aspect-ratio:4/5;max-width:440px;justify-self:end;width:100%;margin-top:3.5rem}
+.frame .shot{position:absolute;inset:0;border-radius:24px;overflow:hidden;
+  background:conic-gradient(#F2A5CB 25%,#EFC0DA 0 50%,#F2A5CB 0 75%,#EFC0DA 0) 0 0/25% 20%;
+  transform:rotate(3deg);border:6px solid var(--paper)}
+.pop{position:absolute;inset:0;transform:rotate(3deg);z-index:2;pointer-events:none;
+  clip-path:inset(-40% 6px 6px 6px round 0 0 18px 18px)}
+.pop img{position:absolute;bottom:6px;left:50%;width:128%;max-width:none;transform:translateX(-50%)}
+.frame .rec,.frame .sticker{z-index:3}
+.vf{position:absolute;inset:-14px;pointer-events:none;transform:rotate(3deg)}
+.vf i{position:absolute;width:38px;height:38px;border:4px solid var(--lime)}
+.vf i:nth-child(1){top:0;left:0;border-right:0;border-bottom:0}
+.vf i:nth-child(2){top:0;right:0;border-left:0;border-bottom:0}
+.vf i:nth-child(3){bottom:0;left:0;border-right:0;border-top:0}
+.vf i:nth-child(4){bottom:0;right:0;border-left:0;border-top:0}
+.rec{position:absolute;top:22px;left:26px;transform:rotate(3deg);display:flex;align-items:center;gap:.45rem;font-weight:700;font-size:.9rem;background:var(--berry);color:var(--paper);padding:.3rem .7rem;border-radius:999px}
+.rec b{width:10px;height:10px;border-radius:50%;background:#FF3B3B;animation:blink 1.4s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.sticker{position:absolute;background:var(--lime);color:var(--berry);font-weight:800;font-family:var(--display);padding:.55rem 1rem;border-radius:14px;box-shadow:4px 4px 0 var(--berry);line-height:1.1;font-size:.95rem;text-align:center}
+.s1{bottom:12%;left:-14%;transform:rotate(-8deg)}
+.s1 strong{display:block;font-size:2rem}
+.s2{top:60%;right:-6%;transform:rotate(7deg);background:var(--blue)}
+.s3{bottom:-3%;right:8%;transform:rotate(-4deg);background:var(--paper)}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr}
+  .frame{justify-self:center;max-width:330px;margin-top:5rem}
+  .s1{left:-6%}.s2{right:-4%}
+}
+
+/* band: scrolling list of what I do */
+.band-wrap{position:relative;overflow:hidden;padding-block:14px;background:linear-gradient(var(--hot) 50%,var(--blush) 50%)}
+.band{background:var(--berry);color:var(--paper);width:104%;margin-left:-2%;transform:rotate(-1.6deg);border-block:3px solid var(--lime)}
+.track{display:flex;width:max-content;animation:marquee 34s linear infinite}
+.band:hover .track{animation-play-state:paused}
+.band ul{list-style:none;margin:0;padding:1rem 0;display:flex;align-items:center;gap:1.4rem;padding-right:1.4rem;font-family:var(--display);font-weight:800;font-size:clamp(1.15rem,2.4vw,1.6rem);white-space:nowrap}
+.band li{display:flex;align-items:center;gap:1.4rem}
+.band li::after{content:"";width:18px;height:18px;flex:none;background:var(--lime);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+.band li:nth-child(3n+2){font-family:var(--script);font-weight:400;font-size:1.35em;color:var(--lime);letter-spacing:0}
+@keyframes marquee{to{transform:translateX(-50%)}}
+/* sections */
+section{padding-block:clamp(4rem,9vw,7rem)}
+.lead{color:var(--ink-soft);max-width:52ch;margin:1rem 0 0}
+
+/* about */
+.about{background:var(--blush);position:relative;overflow:hidden}
+.about::before,.about::after{content:"";position:absolute;width:46px;height:46px;background:var(--hot);opacity:.25;
+  clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+.about::before{top:9%;left:47%}
+.about::after{bottom:10%;right:6%;width:70px;height:70px}
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2.5rem,6vw,5.5rem);align-items:center}
+.snap{position:relative;max-width:420px;width:100%;justify-self:center;margin-block:1.5rem}
+.polaroid{background:#fff;padding:14px 14px 0;border:3px solid var(--berry);border-radius:6px;box-shadow:10px 10px 0 var(--berry);transform:rotate(-4deg)}
+.polaroid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px}
+.polaroid .cap{display:block;text-align:center;font-family:var(--script);color:var(--hot-deep);font-size:clamp(2rem,4vw,2.6rem);padding:.35rem 0 .7rem;line-height:1.1}
+.tape{position:absolute;top:-16px;left:50%;width:120px;height:34px;transform:translateX(-50%) rotate(3deg);background:rgba(219,229,134,.85);border-left:2px dashed rgba(153,30,90,.25);border-right:2px dashed rgba(153,30,90,.25);z-index:2}
+.snap .sticker{z-index:3}
+.a1{top:12%;left:-9%;transform:rotate(-9deg);background:var(--blue)}
+.a2{bottom:20%;right:-10%;transform:rotate(6deg)}
+.a4{top:50%;left:-13%;transform:rotate(6deg);background:var(--paper)}
+.a3{top:-5%;right:-4%;width:64px;height:64px;padding:0;background:var(--hot);border-radius:0;box-shadow:none;
+  clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+.about .hey{display:block;font-family:var(--script);color:var(--hot-deep);font-size:clamp(2.4rem,5vw,3.4rem);transform:rotate(-4deg);transform-origin:left;margin-bottom:.2rem}
+.about h2{font-size:clamp(2.2rem,4.6vw,3.6rem)}
+.about .bio p{max-width:58ch}
+.makes{list-style:none;padding:0;margin:1.6rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem}
+.makes li{background:var(--card);border:2px solid var(--berry);border-radius:999px;padding:.3rem .9rem;font-weight:700;font-size:.95rem;color:var(--ink)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .about .hey{color:var(--hot)}}
+@media (max-width:820px){.about .wrap{grid-template-columns:1fr}.snap{max-width:330px}.a1{left:-4%}.a2{right:-4%}.a4{left:-5%}}
+
+/* envelope */
+.kit{background:repeating-linear-gradient(90deg,var(--surface) 0 38px,var(--blush) 38px 76px)}
+.kit .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:2rem;align-items:center}
+.kit-copy{background:var(--card);padding:2rem;border-radius:28px;border:2px solid var(--line)}
+.kit-copy h2 .script{color:var(--hot);font-size:1.15em}
+.stage{position:relative;width:100%;max-width:620px;aspect-ratio:1/1;justify-self:center;cursor:pointer;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+.stage:focus-visible{outline:3px solid var(--hot);outline-offset:6px;border-radius:20px}
+.env-back,.env-front,.env-letter,.env-flap{position:absolute;left:10%;width:80%}
+.env-flap{bottom:17%;height:22%;z-index:5;transform-origin:50% 0;transform:perspective(900px) rotateX(0deg);
+  transition:transform .5s cubic-bezier(.5,0,.3,1) .75s,z-index 0s 1s}
+.env-flap::before{content:"";position:absolute;inset:0;background:#C40F67;clip-path:polygon(0 0,100% 0,50% 100%)}
+.env-seal{position:absolute;left:50%;bottom:-6%;width:16%;aspect-ratio:1;transform:translateX(-50%);background:var(--lime);border:2px solid var(--berry);border-radius:50%;display:grid;place-items:center;transition:opacity .2s 1.2s,transform .25s 1.2s}
+.stage.open .env-flap{transform:perspective(900px) rotateX(180deg);z-index:1;transition:transform .5s cubic-bezier(.5,0,.3,1) .15s,z-index 0s .4s}
+.stage.open .env-seal{opacity:0;transform:translateX(-50%) scale(.3);transition:opacity .15s,transform .15s}
+.env-back{bottom:3%;height:36%;background:#A80D57;border-radius:10px;z-index:0}
+.env-letter{bottom:6%;height:30%;left:15%;width:70%;background:var(--blue);border-radius:8px;z-index:2;border:2px solid rgba(153,30,90,.25);
+  background-image:repeating-linear-gradient(transparent 0 16px,rgba(153,30,90,.16) 16px 18px);background-position:0 22px;
+  transition:transform .35s ease-in .35s}
+.env-front{bottom:3%;height:36%;background:var(--hot);border-radius:10px;z-index:4;overflow:hidden}
+.env-front .folds{position:absolute;inset:0;width:100%;height:100%}
+.env-front .lbl{position:absolute;left:0;right:0;bottom:14%;text-align:center;font-family:var(--script);font-size:clamp(1.6rem,4.2vw,2.6rem);color:var(--paper);line-height:1}
+.env-seal::after{content:"";width:55%;height:55%;background:var(--hot);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+.stage.open .env-letter{transform:translateY(-42%);transition:transform .55s cubic-bezier(.2,.9,.3,1.1) .6s}
+.item{position:absolute;left:50%;top:62%;z-index:3;opacity:0;transform:translate(-50%,-50%) scale(.2);
+  transition:left .3s ease-in calc(var(--d) * 20ms),top .3s ease-in calc(var(--d) * 20ms),transform .3s ease-in calc(var(--d) * 20ms),opacity .15s calc(var(--d) * 20ms + .15s)}
+.stage.open .item{left:calc(var(--x) * 1%);top:calc(var(--y) * 1%);opacity:1;transform:translate(-50%,-50%) rotate(calc(var(--r) * 1deg));
+  transition:left .7s cubic-bezier(.2,1.25,.4,1) calc(1s + var(--d) * 65ms),top .7s cubic-bezier(.2,1.25,.4,1) calc(1s + var(--d) * 65ms),transform .7s cubic-bezier(.2,1.25,.4,1) calc(1s + var(--d) * 65ms),opacity .2s calc(1s + var(--d) * 65ms)}
+.tile{width:clamp(48px,11%,74px);aspect-ratio:1;border-radius:22%;background:var(--card);border:2px solid var(--berry);box-shadow:3px 3px 0 var(--berry);display:grid;place-content:center;text-align:center;font-family:var(--display);color:var(--ink)}
+.tile b{font-size:clamp(1rem,2.2vw,1.6rem);line-height:1;font-weight:800;color:var(--hot-deep)}
+.tile small{font-size:.66rem;font-weight:600;margin-top:.15rem}
+.pill{background:var(--lime);color:var(--berry);border:2px solid var(--berry);border-radius:999px;padding:.4em .9em;font-family:var(--display);font-weight:800;font-size:clamp(.72rem,1.6vw,1rem);white-space:nowrap;box-shadow:3px 3px 0 var(--berry)}
+.pill.alt{background:var(--paper)}
+.hint{position:absolute;bottom:-2.2rem;left:0;right:0;text-align:center;font-size:.9rem;font-weight:700;color:var(--ink-soft)}
+@media (max-width:860px){.kit .wrap{grid-template-columns:1fr}.stage{margin-bottom:2rem}}
+@media (max-width:520px){.tile small{display:none}.tile{width:13%}.pill{font-size:.68rem}.env-front .lbl{font-size:1.7rem}}
+
+/* interactive question marks */
+.q{display:inline-block;font-family:var(--script);font-weight:400;text-transform:none;letter-spacing:0;color:var(--lime);font-size:1.05em;margin-left:.06em;cursor:pointer;transform:rotate(12deg);animation:bob 2.4s ease-in-out infinite;-webkit-tap-highlight-color:transparent;transition:color .2s}
+.kit-copy .q{color:var(--hot)}
+@keyframes bob{50%{transform:rotate(4deg) translateY(-8px)}}
+@keyframes qwiggle{0%,100%{transform:rotate(12deg) scale(1.15)}25%{transform:rotate(-14deg) scale(1.2)}75%{transform:rotate(26deg) scale(1.2)}}
+@keyframes qspin{0%{transform:rotate(12deg) scale(1)}55%{transform:rotate(210deg) scale(1.45) translateY(-10px)}100%{transform:rotate(372deg) scale(1)}}
+@media (hover:hover){.q:hover{animation:qwiggle .55s ease-in-out infinite;color:var(--paper)}.kit-copy .q:hover{color:var(--hot-deep)}}
+.q.spin{animation:qspin .7s cubic-bezier(.3,1.4,.5,1),bob 2.4s ease-in-out .7s infinite}
+
+/* work */
+.work-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:2.2rem}
+.window{border:3px solid var(--berry);border-radius:22px;overflow:hidden;background:var(--card);box-shadow:8px 8px 0 var(--hot)}
+.tabbar{display:flex;align-items:stretch;background:var(--blush);border-bottom:3px solid var(--berry);overflow-x:auto}
+.dots{display:flex;gap:6px;align-items:center;padding:0 1rem;border-right:3px solid var(--berry)}
+.dots i{width:12px;height:12px;border-radius:50%;background:var(--hot)}
+.dots i:nth-child(2){background:var(--blue)}
+.dots i:nth-child(3){background:var(--paper);border:2px solid var(--berry)}
+[role=tab]{flex:1 0 auto;border:0;border-right:3px solid var(--berry);background:transparent;color:var(--ink);font:700 1rem var(--display);padding:.95rem 1.3rem;cursor:pointer;white-space:nowrap}
+[role=tab][aria-selected=true]{background:var(--hot);color:var(--paper)}
+[role=tab]:hover:not([aria-selected=true]){background:var(--blush-2)}
+.panel{padding:clamp(1.2rem,3vw,2.2rem)}
+.panel[hidden]{display:none}
+.panel-intro{margin:0 0 1.5rem;color:var(--ink-soft);max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1.4rem}
+.proj{margin:0}
+.ph{aspect-ratio:4/5;border-radius:18px;background:repeating-linear-gradient(135deg,var(--blush) 0 12px,var(--blush-2) 12px 24px);display:grid;place-items:center;color:var(--ink-soft);font-weight:600;font-size:.9rem;border:2px solid var(--line)}
+.proj.wide .ph{aspect-ratio:16/10}
+.proj figcaption{padding-top:.8rem}
+.proj h3{font-size:1.3rem;font-weight:800;letter-spacing:-.01em;line-height:1.1}
+.proj p{margin:.3rem 0 0;font-size:.95rem;color:var(--ink-soft);line-height:1.45}
+.tag{display:inline-block;margin-top:.5rem;font-size:.8rem;font-weight:700;background:var(--lime);color:var(--berry);border-radius:999px;padding:.15rem .6rem}
+
+/* photo cards */
+.shoot{all:unset;display:block;cursor:pointer;border-radius:18px}
+.shoot img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;border:2px solid var(--berry);transition:transform .25s}
+.shoot:hover img{transform:rotate(-1.5deg) scale(1.02)}
+.shoot .kind{display:block;margin-top:.75rem;font-size:.85rem;font-weight:700;color:var(--hot-deep)}
+.shoot h3{font-size:1.3rem;font-weight:800;line-height:1.1;margin-top:.15rem}
+.shoot .count{display:block;font-size:.9rem;color:var(--ink-soft);margin-top:.25rem}
+
+/* case studies */
+.case{display:grid;gap:clamp(2.2rem,5vw,3.5rem)}
+.case-top{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(1.5rem,4vw,3rem);align-items:center}
+.case-top img{width:100%;border-radius:18px;border:2px solid var(--berry)}
+.case h3.big{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800}
+.case .made{display:inline-block;margin:.8rem 0 .4rem;font-weight:700;background:var(--blue);color:var(--berry);border-radius:999px;padding:.2rem .8rem;font-size:.9rem}
+.case p{color:var(--ink-soft);max-width:60ch}
+.case h4{font-family:var(--display);font-size:1.5rem;font-weight:800;margin:0 0 1rem;letter-spacing:-.01em}
+.row{display:grid;gap:1rem}
+.row figure{margin:0}
+.row img{width:100%;border-radius:14px;border:2px solid var(--line);object-fit:cover}
+.row figcaption{font-size:.9rem;font-weight:700;margin-top:.5rem}
+.row figcaption small{display:block;font-weight:400;color:var(--ink-soft);line-height:1.4;margin-top:.15rem}
+.r4{grid-template-columns:repeat(4,1fr)}
+.r4 img{aspect-ratio:1}
+.r2 {grid-template-columns:1fr 1fr}
+.r5{grid-template-columns:repeat(5,1fr)}
+.r5 img{aspect-ratio:2/3;background:#fff}
+.ref{display:grid;grid-template-columns:200px 1fr;gap:1.5rem;align-items:center}
+.ref img{width:100%;border-radius:14px;border:2px solid var(--line)}
+.swatches{display:flex;flex-wrap:wrap;gap:1.2rem}
+.sw{text-align:center;font-size:.85rem}
+.sw i{display:block;width:76px;height:76px;border-radius:50%;border:2px solid var(--berry);margin:0 auto .45rem}
+.sw b{display:block}
+@media (max-width:820px){
+  .case-top,.ref{grid-template-columns:1fr}
+  .r4{grid-template-columns:1fr 1fr}
+  .r5{grid-template-columns:repeat(3,1fr)}
+  .ref img{max-width:220px}
+}
+
+/* experience: Nardu-style cards */
+.sec-head{text-align:center;max-width:44rem;margin:0 auto}
+.sec-head .hey{display:block;font-family:var(--script);color:var(--hot-deep);font-size:clamp(2.2rem,4.5vw,3.2rem);transform:rotate(-4deg);margin-bottom:-.15em}
+.sec-head p{color:var(--ink-soft);margin:.9rem auto 0;max-width:46ch}
+.exp{background:var(--surface);position:relative;overflow:hidden}
+.exp::before{content:"";position:absolute;inset:0;background:url(assets/bg-work.jpg) center 25%/cover no-repeat;opacity:.22;-webkit-mask-image:radial-gradient(ellipse 60% 75% at 50% 45%,#000 30%,transparent 80%);mask-image:radial-gradient(ellipse 60% 75% at 50% 45%,#000 30%,transparent 80%)}
+.exp::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--surface) 0,transparent 20%,transparent 75%,var(--surface) 100%)}
+.exp .wrap{position:relative;z-index:1}
+@media (max-width:760px){.exp::before{bottom:auto;height:min(135vw,620px);background-size:cover;background-position:center 20%;opacity:.26;-webkit-mask-image:linear-gradient(180deg,#000 0,#000 45%,transparent 100%);mask-image:linear-gradient(180deg,#000 0,#000 45%,transparent 100%)}}
+.jobs{display:grid;grid-template-columns:repeat(3,1fr);gap:2.2rem;margin-top:3rem}
+.job{position:relative;border-radius:24px;padding:2.6rem 1.5rem 1.6rem;text-align:center;background:var(--blush);color:var(--ink);border:2px solid var(--berry);box-shadow:6px 6px 0 var(--berry);transition:transform .25s cubic-bezier(.3,1.6,.5,1),box-shadow .25s}
+.job:nth-child(even){background:var(--hot);color:var(--paper)}
+.job .ttl{position:absolute;top:-1.15rem;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--hot);color:var(--paper);border:2px solid var(--berry);border-radius:999px;padding:.45rem 1.2rem;font-family:var(--display);font-weight:800;font-size:1.05rem;box-shadow:3px 3px 0 var(--berry)}
+.job:nth-child(even) .ttl{background:var(--lime);color:var(--berry)}
+.job .when{display:inline-block;font-weight:800;font-size:.85rem;border-radius:999px;padding:.15rem .7rem;background:var(--card);color:var(--berry);border:2px solid var(--berry)}
+.job h3{font-size:1.35rem;font-weight:800;margin:.8rem 0 .5rem;line-height:1.1}
+.job p{margin:0;font-size:.98rem;line-height:1.5}
+.job:nth-child(odd) p{color:var(--ink-soft)}
+.job .brands{display:flex;flex-wrap:wrap;justify-content:center;gap:.3rem;margin-top:.8rem}
+.job .brands span{font-size:.78rem;font-weight:700;background:var(--card);color:var(--berry);border-radius:999px;padding:.1rem .55rem}
+.job:nth-child(3n+1):not(:last-child)::after,.job:nth-child(3n+2)::after{content:"";position:absolute;right:-1.95rem;top:50%;width:1.7rem;height:1.7rem;margin-top:-.85rem;background:var(--lime);border:0;z-index:2;
+  clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+@media (hover:hover){.job:hover{transform:translateY(-6px) rotate(-1deg);box-shadow:9px 11px 0 var(--berry)}.job:nth-child(even):hover{transform:translateY(-6px) rotate(1deg)}}
+@media (max-width:980px){.jobs{grid-template-columns:repeat(2,1fr)}.job::after{display:none}}
+@media (max-width:600px){.jobs{grid-template-columns:1fr;gap:2.4rem}.job .ttl{white-space:normal;width:max-content;max-width:90%}}
+
+/* recognition: price-list style rows */
+.recog{background:var(--berry);color:var(--paper);overflow:hidden;position:relative}
+.recog::before{content:"";position:absolute;inset:0;background:url(assets/bg-grass.jpg) 30% 35%/cover no-repeat;opacity:.45;-webkit-mask-image:linear-gradient(180deg,#000 0,#000 40%,transparent 88%);mask-image:linear-gradient(180deg,#000 0,#000 40%,transparent 88%)}
+.recog::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(153,30,90,.45) 0,rgba(153,30,90,.55) 35%,rgba(153,30,90,.92) 60%)}
+@media (max-width:860px){.recog::before{background-size:100% auto;background-position:30% 0;-webkit-mask-image:linear-gradient(180deg,#000 0,transparent 32%);mask-image:linear-gradient(180deg,#000 0,transparent 32%)}.recog::after{background:linear-gradient(180deg,rgba(153,30,90,.45) 0,rgba(153,30,90,.75) 25%,var(--berry) 40%)}}
+.recog .wrap{position:relative;z-index:1}
+#services{position:relative;overflow:hidden}
+#services::before{content:"";position:absolute;inset:0;background:url(assets/bg-reading.jpg) 70% 30%/cover no-repeat;opacity:.16}
+#services::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--surface) 0,transparent 35%,transparent 65%,var(--surface) 100%)}
+#services .wrap{position:relative;z-index:1}
+.recog .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.recog-title{position:sticky;top:110px}
+.recog-title .hey{display:block;font-family:var(--script);color:var(--lime);font-size:clamp(2.2rem,4.5vw,3.2rem);transform:rotate(-5deg);transform-origin:left;margin-bottom:-.1em}
+.recog-title h2{font-size:clamp(3rem,7vw,5.6rem);line-height:.88;letter-spacing:-.04em;text-transform:uppercase;color:var(--paper)}
+.recog-title p{color:var(--blush);margin:1.2rem 0 0;max-width:34ch}
+.honors{list-style:none;margin:0;padding:0;display:grid;gap:.8rem}
+.honors li{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:#FFE3F1;color:var(--berry);border-radius:999px;padding:.6rem .6rem .6rem 1.5rem;border:2px solid var(--berry);box-shadow:4px 4px 0 rgba(0,0,0,.25);transition:transform .2s cubic-bezier(.3,1.6,.5,1)}
+.honors li:nth-child(4n+3){background:var(--blue)}
+.honors li.edu{background:var(--lime);border-radius:26px}
+.honors b{display:block;font-family:var(--display);font-size:1.08rem;line-height:1.15}
+.honors small{display:block;font-size:.9rem;line-height:1.3;margin-top:.1rem;opacity:.85}
+.honors .chip{flex:none;background:var(--hot);color:var(--paper);border-radius:999px;padding:.55rem 1rem;font-family:var(--display);font-weight:800;font-size:.9rem;white-space:nowrap}
+@media (hover:hover){.honors li:hover{transform:translateX(-6px) rotate(-.6deg)}}
+@media (max-width:860px){.recog .wrap{grid-template-columns:1fr}.recog-title{position:static}}
+@media (max-width:560px){.honors li{border-radius:20px;flex-direction:column;align-items:flex-start;padding:1rem 1.1rem}.honors .chip{padding:.3rem .8rem;font-size:.82rem}}
+/* services: tap a service to see details */
+.svc-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem;margin:2.4rem auto 0;max-width:62rem}
+.svc-pills button{display:inline-flex;align-items:center;gap:.5rem;border:2px solid var(--berry);background:var(--card);color:var(--ink);border-radius:999px;padding:.7rem 1.2rem;font:800 1.02rem var(--display);cursor:pointer;box-shadow:3px 3px 0 var(--berry);transition:transform .18s cubic-bezier(.3,1.6,.5,1),box-shadow .18s,background-color .18s,color .18s}
+.svc-pills button::before{content:"";width:14px;height:14px;background:var(--hot);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);transition:transform .3s}
+.svc-pills button[aria-pressed=true]{background:var(--hot);color:var(--paper);transform:translateY(-3px) rotate(-2deg);box-shadow:4px 6px 0 var(--berry)}
+.svc-pills button[aria-pressed=true]::before{background:var(--lime);transform:scale(1.3)}
+.svc-pills button:active{transform:translate(2px,2px);box-shadow:0 0 0 var(--berry)}
+@media (hover:hover){.svc-pills button:hover:not([aria-pressed=true]){background:var(--lime);color:var(--berry);transform:translateY(-3px)}}
+.svc-card{position:relative;margin:2.2rem auto 0;max-width:62rem;display:grid;grid-template-columns:1.1fr 1fr;gap:2rem;align-items:center;background:var(--blush);border:3px solid var(--berry);border-radius:28px;padding:clamp(1.6rem,4vw,2.6rem);box-shadow:10px 10px 0 var(--hot)}
+.svc-card.swap{animation:swap .35s cubic-bezier(.2,.9,.3,1.1)}
+@keyframes swap{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+.svc-card h3{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800}
+.svc-card .desc{color:var(--ink-soft);margin:.7rem 0 1.3rem;max-width:40ch}
+.svc-card .inc{padding:1.3rem 1.4rem;background:var(--card);border:2px solid var(--berry);border-radius:20px}
+.svc-card .inc b{display:block;font-family:var(--display);font-size:1.1rem;margin-bottom:.7rem}
+.svc-card ul{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+.svc-card li{display:flex;gap:.6rem;align-items:baseline}
+.svc-card li::before{content:"";flex:none;width:12px;height:12px;background:var(--hot);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+.svc-card .note-free{font-size:.9rem;color:var(--ink-soft);margin:.9rem 0 0}
+@media (max-width:760px){.svc-card{grid-template-columns:1fr}}
+/* contact */
+.contact{position:relative;overflow:hidden;background:var(--hot);color:var(--paper);text-align:center;padding:clamp(5rem,10vw,8rem) 0 clamp(6rem,11vw,9rem);
+  background-image:radial-gradient(circle,rgba(255,244,249,.14) 17%,transparent 18%),radial-gradient(circle,rgba(255,244,249,.14) 17%,transparent 18%);background-size:48px 48px;background-position:0 0,24px 24px}
+.c-inner{position:relative;z-index:3;display:flex;flex-direction:column;align-items:center}
+.c-so{font-family:var(--script);color:var(--lime);font-size:clamp(3rem,8vw,5.5rem);line-height:1;transform:rotate(-7deg);margin-bottom:-.35em}
+.contact h2{font-size:clamp(3.4rem,12vw,9.5rem);letter-spacing:-.05em;line-height:.84;text-transform:uppercase}
+.contact .c-text{color:var(--paper);font-weight:600;font-size:clamp(1.05rem,2vw,1.25rem);margin:1.4rem auto 1.8rem;max-width:38ch}
+.c-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem}
+.btn.big{font-size:1.15rem;padding:1rem 1.8rem}
+.c-mail{margin:1rem 0 0;font-weight:700;opacity:.9}
+.c-badge{position:absolute;right:max(4%,calc(50% - 600px));bottom:12%;width:clamp(120px,15vw,170px);aspect-ratio:1;z-index:3;color:var(--berry)}
+.c-badge .ring{width:100%;height:100%;animation:spin 16s linear infinite}
+.c-badge text{font:800 15px var(--display);letter-spacing:2.6px;fill:var(--berry)}
+.c-badge .core{position:absolute;inset:22%;border-radius:50%;background:var(--lime);border:3px solid var(--berry);display:grid;place-items:center}
+.c-badge .core::after{content:"";width:46%;height:46%;background:var(--hot);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+.c-badge::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--paper);border:3px solid var(--berry);z-index:-1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.c-spark{position:absolute;z-index:3;background:var(--paper);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);animation:twinkle 2.6s ease-in-out infinite}
+.c-spark.a{width:34px;height:34px;left:16%;top:18%}
+.c-spark.b{width:22px;height:22px;right:22%;top:12%;background:var(--lime);animation-delay:.8s}
+.c-spark.c{width:28px;height:28px;left:30%;top:58%;background:var(--blue);animation-delay:1.4s}
+@keyframes twinkle{50%{transform:scale(.55) rotate(45deg);opacity:.6}}
+@media (max-width:860px){
+  .c-so{margin-bottom:-.05em}
+  .c-badge{right:4%;bottom:auto;top:1.2rem;width:92px}
+  .c-spark.c{display:none}
+}
+
+/* footer */
+.foot{position:relative;background:var(--surface);color:var(--ink);padding:3.6rem 0 1.4rem}
+.foot::before{content:"";position:absolute;left:0;right:0;top:0;height:16px;background:radial-gradient(circle at 50% 0,var(--hot) 11px,transparent 12px) 0 0/26px 16px repeat-x}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:2.4rem;align-items:start}
+.f-logo{display:inline-block;font-family:var(--display);font-weight:800;color:var(--ink);font-size:clamp(2rem,4vw,2.5rem);letter-spacing:-.03em;line-height:1;text-decoration:none;transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+.f-logo span{font-family:var(--script);font-weight:400;color:var(--hot);font-size:1.25em;margin-left:.12rem;letter-spacing:0}
+.f-tag{margin:.6rem 0 1rem;color:var(--ink-soft);max-width:34ch}
+.f-open{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.9rem;background:var(--blush);color:var(--ink);border-radius:999px;padding:.3rem .8rem .3rem .6rem}
+.f-open i{width:9px;height:9px;border-radius:50%;background:#3BB273;box-shadow:0 0 0 0 rgba(59,178,115,.6);animation:pulse 1.8s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(59,178,115,0)}100%{box-shadow:0 0 0 0 rgba(59,178,115,0)}}
+.foot h3{font-family:var(--display);font-size:.95rem;font-weight:800;margin:0 0 .9rem;color:var(--hot-deep)}
+.f-nav{list-style:none;margin:0;padding:0;display:grid;gap:.45rem}
+.f-nav a{text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:.45rem;transition:color .2s,transform .2s}
+.f-nav a::before{content:"";width:10px;height:10px;background:var(--line);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);transition:background-color .2s,transform .3s}
+.f-icons{display:flex;flex-wrap:wrap;gap:.6rem}
+.f-icons a{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--berry);color:var(--berry);background:var(--card);text-decoration:none;font:800 .9rem var(--display);transition:transform .22s cubic-bezier(.3,1.6,.5,1),background-color .2s,color .2s,box-shadow .2s}
+.f-icons svg{width:20px;height:20px}
+.f-mail{display:inline-block;margin-top:.9rem;font-weight:700;color:var(--ink);text-decoration-color:var(--hot);text-underline-offset:4px}
+.f-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;margin-top:2.6rem;padding-top:1.2rem;border-top:2px dashed var(--line);font-size:.9rem;color:var(--ink-soft)}
+.f-top{display:inline-flex;align-items:center;gap:.4rem;background:var(--hot);color:var(--paper);border:0;border-radius:999px;padding:.5rem 1rem;font:800 .9rem var(--display);cursor:pointer;transition:transform .2s cubic-bezier(.3,1.6,.5,1),background-color .2s}
+.f-top svg{width:16px;height:16px}
+@media (hover:hover){
+  .f-logo:hover{transform:rotate(-4deg) scale(1.05)}
+  .f-nav a:hover{color:var(--hot);transform:translateX(3px)}
+  .f-nav a:hover::before{background:var(--hot);transform:rotate(90deg)}
+  .f-icons a:hover{background:var(--hot);color:var(--paper);border-color:var(--hot);transform:translateY(-4px) rotate(-8deg);box-shadow:3px 4px 0 var(--berry)}
+  .f-icons a:nth-child(even):hover{transform:translateY(-4px) rotate(8deg)}
+  .f-top:hover{background:var(--berry);transform:translateY(-3px)}
+}
+.f-icons a:active,.f-top:active{transform:scale(.9)}
+@media (max-width:760px){.f-grid{grid-template-columns:1fr;text-align:center;justify-items:center}.f-tag{margin-inline:auto}.f-nav{justify-items:center}.f-icons{justify-content:center}.f-bottom{justify-content:center;text-align:center}}
+
+/* toast */
+.toast{position:fixed;left:50%;bottom:1.4rem;z-index:300;transform:translate(-50%,200%);opacity:0;visibility:hidden;background:var(--berry);color:var(--paper);border:2px solid var(--lime);border-radius:999px;padding:.75rem 1.3rem;font-weight:700;box-shadow:5px 5px 0 var(--lime);transition:transform .35s cubic-bezier(.2,1.3,.4,1);max-width:calc(100% - 2rem);text-align:center}
+.toast.on{transform:translate(-50%,0);opacity:1;visibility:visible}
+.contact .btn-ghost{background:transparent;color:var(--paper);border-color:var(--paper)}
+@media (hover:hover){.contact .btn-ghost:hover{background:var(--paper);color:var(--hot)}}
+/* ---------- interactions ---------- */
+.btn{position:relative;box-shadow:0 0 0 var(--berry);transition:transform .18s cubic-bezier(.3,1.6,.5,1),box-shadow .18s,background-color .18s,color .18s}
+.btn.sm{padding:.5rem 1rem;font-size:.9rem}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.links{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
+.chips .tag{margin-top:0}
+@media (hover:hover){
+  .btn:hover{transform:translate(-2px,-3px) rotate(-2deg);box-shadow:4px 5px 0 var(--berry)}
+  .btn-lime:hover{background:var(--paper);border-color:var(--paper)}
+  .btn-solid:hover{background:var(--lime);color:var(--berry);border-color:var(--berry)}
+  .btn-ghost:hover{background:var(--paper);color:var(--hot);border-color:var(--paper)}
+  .btn-line:hover{background:var(--hot);color:var(--paper);border-color:var(--berry)}
+  .hero .btn:hover,.contact .btn:hover,.top .btn:hover{box-shadow:4px 5px 0 var(--berry)}
+  .nav a:not(.btn):hover{text-decoration:underline wavy var(--lime);text-underline-offset:6px;text-decoration-thickness:2px}
+  .logo:hover span{color:var(--lime)}
+  [role=tab]:hover:not([aria-selected=true]){background-size:100% 100%}
+  .makes li:hover{background:var(--hot);color:var(--paper);transform:rotate(-4deg) scale(1.06)}
+  .makes li:nth-child(even):hover{background:var(--lime);color:var(--berry);transform:rotate(4deg) scale(1.06)}
+  .award:hover{transform:rotate(0) translateY(-5px);box-shadow:6px 9px 0 var(--berry)}
+  .socials a:hover{background:var(--lime);transform:rotate(-4deg) translateY(-2px)}
+  .zoom:hover{transform:scale(1.025);box-shadow:5px 6px 0 var(--hot)}
+  .service:hover h3::before{transform:rotate(90deg) scale(1.3)}
+  .search-btn:hover{background:var(--paper);color:var(--hot)}
+}
+.btn:active{transform:translate(2px,2px) rotate(0);box-shadow:0 0 0 var(--berry);transition-duration:.06s}
+[role=tab]{background-image:linear-gradient(var(--blush-2),var(--blush-2));background-repeat:no-repeat;background-position:bottom;background-size:100% 0;transition:background-size .25s,color .2s}
+[role=tab][aria-selected=true]{background-image:none}
+[role=tab]:active{transform:scale(.96)}
+.makes li{transition:transform .2s cubic-bezier(.3,1.6,.5,1),background-color .2s,color .2s;cursor:default}
+.makes li:active{transform:scale(.92)}
+.award{transition:transform .25s cubic-bezier(.3,1.6,.5,1),box-shadow .25s}
+.socials a{transition:transform .2s cubic-bezier(.3,1.6,.5,1),background-color .2s}
+.socials a:active,.shoot:active,.zoom:active{transform:scale(.96)}
+.service h3::before{transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
+.logo span{transition:color .2s}
+
+/* sparkle burst on tap or click */
+.spark{position:fixed;z-index:200;width:14px;height:14px;margin:-7px 0 0 -7px;pointer-events:none;background:var(--c);
+  clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);animation:spark .6s ease-out forwards}
+@keyframes spark{0%{transform:translate(0,0) scale(.4) rotate(0)}70%{opacity:1}100%{transform:translate(var(--dx),var(--dy)) scale(1.1) rotate(160deg);opacity:0}}
+
+/* zoomable images */
+.zoom{cursor:zoom-in;transition:transform .25s cubic-bezier(.3,1.6,.5,1),box-shadow .25s}
+.zoom:focus-visible{outline:3px solid var(--hot);outline-offset:3px}
+.flash{animation:flash 1.6s ease-out}
+@keyframes flash{0%,40%{box-shadow:0 0 0 6px var(--lime);border-radius:18px}100%{box-shadow:0 0 0 0 transparent}}
+
+/* brand books */
+.bbook{--bb-bg:#110702;--bb-fg:#F6F2DD;--bb-acc:#9A713B;--bb-soft:rgba(246,242,221,.78);
+  position:relative;overflow:hidden;background:var(--bb-bg);color:var(--bb-fg);border-radius:26px;border:3px solid var(--berry);box-shadow:8px 8px 0 var(--hot);padding:clamp(1.4rem,4vw,2.6rem);margin-bottom:2.4rem}
+.bb-brwtl{background-image:radial-gradient(circle at 20% 20%,rgba(154,113,59,.18) 0 2px,transparent 3px);background-size:26px 26px}
+.bb-fleur{--bb-bg:#7A8450;--bb-fg:#FFFFFF;--bb-acc:#FACED6;--bb-soft:rgba(255,255,255,.85);
+  background-image:radial-gradient(circle,rgba(250,206,214,.16) 22%,transparent 24%);background-size:40px 40px}
+.bb-head{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(1.6rem,4vw,3rem);align-items:center}
+.bb-cover{position:relative;transform:rotate(-2.5deg)}
+.bb-cover img{width:100%;border-radius:8px;box-shadow:6px 6px 0 rgba(255,255,255,.12),12px 12px 0 rgba(255,255,255,.06),0 14px 34px rgba(0,0,0,.4)}
+.bb-fleur .bb-cover{transform:rotate(2deg)}
+.bb-kicker{display:inline-block;font-weight:800;font-size:.82rem;background:var(--bb-acc);color:var(--bb-bg);border-radius:999px;padding:.25rem .8rem}
+.bbook h3{font-family:var(--display);font-weight:800;font-size:clamp(2.8rem,6vw,4.4rem);line-height:.9;letter-spacing:-.04em;margin:.6rem 0 .2rem;color:var(--bb-fg)}
+.bb-tag{font-family:var(--display);font-style:italic;font-weight:700;color:var(--bb-acc);margin:0 0 .9rem;font-size:1.1rem}
+.bbook .bb-text p{color:var(--bb-soft);max-width:46ch}
+.bb-voice{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0}
+.bb-voice span{border:2px solid var(--bb-acc);color:var(--bb-fg);border-radius:999px;padding:.2rem .8rem;font-weight:700;font-size:.88rem;transition:background-color .2s,color .2s}
+@media (hover:hover){.bb-voice span:hover{background:var(--bb-acc);color:var(--bb-bg)}}
+.bb-sw{display:flex;flex-wrap:wrap;gap:1.1rem;margin:1rem 0}
+.bb-sw span{display:flex;align-items:center;gap:.55rem;font-weight:700;font-size:.92rem;line-height:1.1}
+.bb-sw small{display:block;font-weight:500;opacity:.75;font-size:.78rem}
+.bb-sw i{width:38px;height:38px;border-radius:50%;border:2px solid var(--bb-fg);flex:none}
+.bb-credit{font-size:.9rem;font-style:italic}
+.bb-btn{background:var(--bb-acc);color:var(--bb-bg);border-color:var(--bb-acc)}
+.bb-line{background:transparent;color:var(--bb-fg);border-color:var(--bb-fg)}
+@media (hover:hover){.bb-btn:hover{background:var(--bb-fg);color:var(--bb-bg);border-color:var(--bb-fg)}.bb-line:hover{background:var(--bb-fg);color:var(--bb-bg)}}
+.fl-name{font-family:var(--script)!important;font-weight:400!important;letter-spacing:0!important;font-size:clamp(3.4rem,8vw,5.4rem)!important;line-height:1!important}
+.fl-name small{display:block;font-family:"Times New Roman",Times,serif;font-stretch:condensed;font-size:1.05rem;letter-spacing:.06em;margin:.1rem 0 0 .2rem;color:var(--bb-acc)}
+.fl-type{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0 .6rem}
+.fl-type span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.4);border-radius:12px;padding:.35rem .8rem}
+.fl-type .t1{font-family:var(--script);font-size:1.5rem;line-height:1.2}
+.fl-type .t3{font-family:var(--display);font-style:italic;font-weight:800;font-size:1.05rem;letter-spacing:-.01em}
+.fl-type .t2{font-family:"Times New Roman",Times,serif;font-stretch:condensed;font-size:1.05rem;align-self:center}
+.bb-pages{display:flex;gap:1.1rem;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:2rem;padding:.6rem .3rem 1rem;scrollbar-width:thin}
+.bb-pages figure{flex:0 0 clamp(260px,40%,420px);margin:0;scroll-snap-align:start}
+.bb-pages figure:nth-child(odd){transform:rotate(-1.5deg)}
+.bb-pages figure:nth-child(even){transform:rotate(1.5deg)}
+.bb-pages img{width:100%;aspect-ratio:2.8/1;object-fit:cover;border-radius:8px;border:2px solid rgba(255,255,255,.25);box-shadow:0 8px 20px rgba(0,0,0,.3)}
+.bb-fleur .bb-pages img{aspect-ratio:792/612}
+.bb-fleur .bb-pages figure{flex-basis:clamp(200px,26%,280px)}
+.bb-pages figcaption{margin-top:.5rem;font-weight:700;font-size:.9rem;color:var(--bb-soft)}
+@media (max-width:820px){.bb-head{grid-template-columns:1fr}.bb-cover{max-width:460px}}
+
+/* graphic design poster wall */
+.wall{columns:3 240px;column-gap:1.6rem;padding-top:.8rem}
+.pin{position:relative;display:inline-block;width:100%;margin:0 0 2rem;break-inside:avoid;background:#fff;padding:10px 10px 12px;border:2px solid var(--berry);border-radius:6px;box-shadow:5px 6px 0 var(--berry);transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+.pin:nth-child(3n+1){transform:rotate(-2deg)}
+.pin:nth-child(3n+2){transform:rotate(1.5deg)}
+.pin:nth-child(3n){transform:rotate(-.8deg)}
+.pin::before{content:"";position:absolute;top:-13px;left:50%;width:84px;height:26px;transform:translateX(-50%) rotate(-3deg);background:rgba(219,229,134,.85);z-index:2}
+.pin:nth-child(even)::before{background:rgba(185,201,231,.9);transform:translateX(-50%) rotate(4deg)}
+.pin img{width:100%;border-radius:3px}
+.pin figcaption{margin-top:.55rem;color:#5E0F37;font-size:.92rem}
+.pin figcaption b{font-family:var(--display);font-weight:800;font-size:1.05rem}
+.pin figcaption small{display:block;color:#7A2A55;font-size:.8rem}
+@media (hover:hover){.pin:hover{transform:rotate(0) translateY(-6px) scale(1.02);z-index:3}}
+
+/* content creation */
+.cc-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.stat{text-align:center;background:var(--blush);border:2px solid var(--berry);border-radius:22px;padding:1.3rem 1rem;box-shadow:4px 4px 0 var(--berry)}
+.stat:nth-child(2){background:var(--hot);color:var(--paper);transform:rotate(-2deg)}
+.stat:nth-child(3){background:var(--lime);color:var(--berry)}
+.stat b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(2.4rem,6vw,3.8rem);line-height:1;letter-spacing:-.04em}
+.stat span{display:block;margin-top:.35rem;font-weight:700;font-size:.95rem}
+.phones{display:flex;gap:1.2rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:.4rem .2rem 1.2rem;margin-bottom:1.6rem;scrollbar-width:thin}
+.phones figure{flex:0 0 200px;margin:0;scroll-snap-align:start;text-align:center}
+.phones figcaption{margin-top:.6rem;font-weight:800;font-family:var(--display)}
+.phonef{position:relative;aspect-ratio:9/16;border-radius:28px;border:6px solid var(--berry);background:#000;overflow:hidden;box-shadow:5px 6px 0 var(--hot)}
+.phonef::before{content:"";position:absolute;top:7px;left:50%;width:34%;height:14px;transform:translateX(-50%);background:var(--berry);border-radius:999px;z-index:2;pointer-events:none}
+.phonef video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sq-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.8rem}
+.sq-grid.four{grid-template-columns:repeat(4,1fr);margin-top:2rem}
+.sq-grid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;border:2px solid var(--line)}
+@media (max-width:820px){.sq-grid{grid-template-columns:repeat(3,1fr)}.sq-grid.four{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.cc-stats{grid-template-columns:1fr}.stat:nth-child(2){transform:none}.sq-grid{grid-template-columns:repeat(2,1fr)}.phones figure{flex-basis:170px}}
+
+/* hair and makeup */
+.hm-top{display:grid;grid-template-columns:260px 1fr;gap:clamp(1.6rem,4vw,3rem);align-items:center}
+.hm-top figure{margin:0}
+.hm-top h3.big{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800}
+.hm-top .made{display:inline-block;margin:.8rem 0 .4rem;font-weight:700;background:var(--blue);color:var(--berry);border-radius:999px;padding:.2rem .8rem;font-size:.9rem}
+.hm-top p{color:var(--ink-soft);max-width:52ch}
+@media (max-width:640px){.hm-top{grid-template-columns:1fr}.hm-top figure{max-width:240px;margin:0 auto}}
+
+/* film and web extras */
+.site-card{display:block;aspect-ratio:16/10;border-radius:18px;border:2px solid var(--berry);overflow:hidden;background:var(--berry);color:var(--paper);text-decoration:none;transition:transform .25s cubic-bezier(.3,1.6,.5,1),box-shadow .25s}
+.site-card .bar{display:flex;align-items:center;gap:5px;padding:.55rem .8rem;background:var(--blush);border-bottom:2px solid var(--berry)}
+.site-card .bar i{width:9px;height:9px;border-radius:50%;background:var(--hot)}
+.site-card .bar i:nth-child(2){background:var(--blue)}.site-card .bar i:nth-child(3){background:var(--lime)}
+.site-card .url{margin-left:.5rem;flex:1;background:var(--card);color:var(--ink);border-radius:999px;padding:.12rem .7rem;font-size:.8rem;font-weight:700}
+.site-card .body{display:grid;place-content:center;text-align:center;height:calc(100% - 2.4rem);padding:1rem;gap:.4rem}
+.site-card .body b{font-family:var(--display);font-size:clamp(2.6rem,6vw,3.6rem);line-height:.9;letter-spacing:-.04em}
+.site-card .body span{font-size:.95rem;max-width:26ch;margin:0 auto;opacity:.9}
+@media (hover:hover){.site-card:hover{transform:scale(1.025);box-shadow:5px 6px 0 var(--hot)}}
+
+.poster{max-width:380px;justify-self:center}
+.wide-grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.proj > img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:18px;border:2px solid var(--berry)}
+.typecard{aspect-ratio:16/10;border-radius:18px;border:2px solid var(--berry);background:var(--hot);color:var(--paper);display:grid;place-content:center;text-align:center;padding:1rem}
+.figma-card{text-decoration:none;transition:transform .25s cubic-bezier(.3,1.6,.5,1),box-shadow .25s}
+@media (hover:hover){.figma-card:hover{transform:scale(1.025);box-shadow:5px 6px 0 var(--berry)}}
+.typecard .script{color:var(--lime);font-size:1.9rem;transform:rotate(-5deg)}
+.typecard b{font-family:var(--display);font-weight:800;font-size:clamp(2.4rem,5vw,3.4rem);line-height:.85;letter-spacing:-.04em}
+.phone{position:relative;aspect-ratio:16/10;border-radius:18px;border:2px solid var(--berry);background:var(--blush);overflow:hidden}
+.phone img{position:absolute;top:6%;left:0;right:0;margin-inline:auto;height:88%;width:auto;border-radius:12px}
+.wide-grid .ph{aspect-ratio:16/10}
+.masonry{columns:3 220px;column-gap:1rem}
+.masonry img{width:100%;margin-bottom:1rem;border-radius:14px;border:2px solid var(--line);break-inside:avoid}
+.masonry.three{columns:3 200px}
+.gallery{columns:3 230px;column-gap:1.1rem}
+.gallery figure{margin:0 0 1.2rem;break-inside:avoid}
+.gallery img{width:100%;border-radius:14px;border:2px solid var(--line)}
+.gallery figcaption{margin-top:.45rem;font-size:.95rem}
+.gallery figcaption b{font-family:var(--display);font-weight:800}
+.gallery figcaption small{display:block;color:var(--ink-soft);font-size:.82rem}
+.vid{position:relative;aspect-ratio:16/9;border-radius:18px;border:2px solid var(--berry);overflow:hidden;background:var(--berry)}
+.vid.tall{aspect-ratio:9/16}
+.vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#000}
+.reel{display:grid;gap:1.2rem;margin-bottom:1.2rem}
+.reel figure{margin:0}
+.reel figcaption{margin-top:.5rem;font-size:.95rem}
+.reel figcaption b{font-family:var(--display);font-weight:800}
+.reel figcaption small{display:block;color:var(--ink-soft);font-size:.85rem}
+.r-a{grid-template-columns:1fr 1fr}
+.r-b{grid-template-columns:1.778fr .5625fr}
+@media (max-width:640px){.r-a{grid-template-columns:1fr}}
+@media (max-width:820px){.poster{max-width:300px}.row.tall{grid-template-columns:1fr 1fr}}
+
+/* about note */
+.note{position:relative;background:var(--lime);color:var(--berry);border:2px solid var(--berry);border-radius:14px;box-shadow:5px 5px 0 var(--berry);padding:1.9rem 1.3rem 1.1rem;margin:2.6rem 0 .4rem;max-width:52ch;transform:rotate(-1deg)}
+.note .ps{position:absolute;top:-1.45rem;left:-.7rem;font-family:var(--script);font-size:2rem;line-height:1;color:var(--paper);background:var(--hot);border:2px solid var(--berry);border-radius:999px;padding:.15rem .9rem .35rem;box-shadow:3px 3px 0 var(--berry);transform:rotate(-8deg);cursor:pointer;transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+@media (hover:hover){.note .ps:hover{transform:rotate(6deg) scale(1.12)}}
+.note .ps:active{transform:rotate(-8deg) scale(.9)}
+.note p{margin:0;color:var(--berry);font-weight:600}
+
+
+/* search */
+.search-btn{display:inline-flex;align-items:center;gap:.45rem;background:transparent;color:var(--paper);border:2px solid var(--paper);border-radius:999px;padding:.55rem 1rem;font:700 .95rem var(--body);cursor:pointer;transition:background-color .18s,color .18s,transform .18s}
+.search-btn svg{width:18px;height:18px}
+.search-btn kbd{font:600 .75rem var(--body);border:1.5px solid currentColor;border-radius:6px;padding:0 .35rem;opacity:.8}
+.search-btn:active{transform:scale(.94)}
+@media (max-width:760px){.search-btn .lbl,.search-btn kbd{display:none}.search-btn{padding:.55rem}}
+dialog.search{width:min(640px,100% - 2rem);margin:12vh auto auto;padding:0;border:3px solid var(--berry);border-radius:22px;background:var(--card);color:var(--ink);box-shadow:8px 8px 0 var(--hot);max-height:76dvh}
+dialog.search::backdrop{background:rgba(60,5,35,.6)}
+.s-field{display:flex;align-items:center;gap:.7rem;padding:1rem 1.2rem;border-bottom:3px solid var(--berry);background:var(--blush)}
+.s-field svg{width:22px;height:22px;flex:none;color:var(--hot-deep)}
+.s-field input{flex:1;min-width:0;border:0;background:transparent;font:600 1.15rem var(--body);color:var(--ink);outline:none}
+.s-field input::placeholder{color:var(--ink-soft);opacity:.8}
+.s-close{border:2px solid var(--berry);background:var(--card);color:var(--berry);border-radius:999px;font:700 .85rem var(--body);padding:.3rem .8rem;cursor:pointer}
+.s-body{padding:.8rem;overflow:auto;max-height:calc(76dvh - 80px)}
+.s-hint{padding:.4rem .5rem 0;color:var(--ink-soft);font-size:.95rem;margin:0}
+.s-sugg{display:flex;flex-wrap:wrap;gap:.4rem;padding:.7rem .5rem .5rem}
+.s-sugg button{border:2px solid var(--berry);background:var(--card);color:var(--ink);border-radius:999px;padding:.3rem .8rem;font:700 .9rem var(--body);cursor:pointer;transition:background-color .15s,transform .15s}
+.s-sugg button:hover{background:var(--lime)}
+.s-res{list-style:none;margin:0;padding:0;display:grid;gap:.3rem}
+.s-res button{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.75rem .9rem;border-radius:12px;cursor:pointer;border:2px solid transparent}
+.s-res button:hover,.s-res button.on{background:var(--blush);border-color:var(--berry)}
+.s-res b{font-family:var(--display);font-size:1.05rem}
+.s-res span{flex:none;font-size:.8rem;font-weight:700;background:var(--lime);color:var(--berry);border-radius:999px;padding:.12rem .6rem}
+
+/* lightbox */
+dialog.lb{width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:rgba(48,4,28,.96);color:var(--paper)}
+dialog.lb::backdrop{background:rgba(48,4,28,.96)}
+.lb-wrap{height:100%;display:grid;grid-template-rows:auto 1fr auto}
+.lb-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:max(env(safe-area-inset-top),.9rem) 1rem .9rem}
+.lb-back{display:inline-flex;align-items:center;gap:.4rem;background:var(--lime);color:var(--berry);border:2px solid var(--lime);border-radius:999px;padding:.55rem 1.1rem .55rem .8rem;font:800 1rem var(--display);cursor:pointer;transition:transform .18s cubic-bezier(.3,1.6,.5,1),background-color .18s}
+.lb-back svg{width:20px;height:20px}
+.lb-count{font-weight:700;font-size:.95rem;opacity:.85}
+.lb-stage{position:relative;display:grid;place-items:center;min-height:0;padding:0 4.2rem;touch-action:pan-y}
+.lb-stage img{max-width:100%;max-height:calc(100dvh - 11.5rem);object-fit:contain;border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.4);animation:lbin .3s cubic-bezier(.2,.9,.3,1.1)}
+@keyframes lbin{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:2px solid var(--paper);background:rgba(255,255,255,.08);color:var(--paper);display:grid;place-items:center;cursor:pointer;transition:background-color .18s,color .18s,transform .18s}
+.lb-nav svg{width:22px;height:22px}
+.lb-prev{left:.9rem}.lb-next{right:.9rem}
+.lb-nav:active{transform:translateY(-50%) scale(.9)}
+.lb-cap{padding:.9rem 1.2rem max(env(safe-area-inset-bottom),1.1rem);text-align:center;max-width:70ch;margin:0 auto}
+.lb-cap b{display:block;font-family:var(--display);font-size:1.25rem}
+.lb-cap p{margin:.3rem 0 0;font-size:.95rem;opacity:.85;line-height:1.45}
+@media (hover:hover){
+  .lb-back:hover{background:var(--paper);transform:translateX(-3px)}
+  .lb-nav:hover{background:var(--lime);color:var(--berry);border-color:var(--lime)}
+}
+.lb-back:active{transform:scale(.94)}
+@media (max-width:640px){
+  .lb-stage{padding:0 .6rem}
+  .lb-nav{top:auto;bottom:-3.6rem;transform:none;width:42px;height:42px}
+  .lb-nav:active{transform:scale(.9)}
+  .lb-prev{left:.8rem}.lb-next{right:.8rem}
+  .lb-cap{padding-inline:3.8rem}
+  .lb-stage img{max-height:calc(100dvh - 15rem)}
+  .lb-cap p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .track{width:auto}.track ul+ul{display:none}.band ul{flex-wrap:wrap;justify-content:center;white-space:normal;padding-inline:1rem}
+
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top">teryn<span>gianna</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#kit">Tools</a>
+      <button class="search-btn" type="button" data-open-search aria-label="Search the portfolio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span class="lbl">Search</span><kbd>/</kbd></button>
+      <a class="btn btn-lime" href="#contact">Work with me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" style="padding:0">
+    <div class="wrap">
+      <div>
+        <span class="hello script">hi, I’m</span>
+        <h1>Teryn<span class="l2">Gianna</span></h1>
+        <p>A multimedia artist with a love for storytelling, visuals, and everything in between. I create art to express, to connect, and to leave something behind, hoping to be remembered through the things I create.</p>
+        <div class="cta-row">
+          <a class="btn btn-lime" href="#work">See my work</a>
+          <a class="btn btn-ghost" data-email href="mailto:arianotgrande.collab@gmail.com?subject=Project%20inquiry">Email me</a>
+        </div>
+      </div>
+      <div class="frame">
+        <div class="shot" aria-hidden="true"></div>
+        <div class="pop"><img src="assets/hero-cutout.webp" alt="Teryn Gianna in a blonde braided wig, pearls, and a polka dot top, holding a pink tablet" width="1100" height="1228" fetchpriority="high"></div>
+        <div class="vf" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="rec" aria-hidden="true"><b></b>REC</div>
+        <div class="sticker s1"><strong>50+</strong>brands worked with</div>
+        <div class="sticker s2">Adobe Certified<br>Professional</div>
+        <div class="sticker s3">Award-winning<br>short film</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band-wrap">
+    <div class="band" aria-label="What I do: photography, film, digital art, traditional art, 3D, branding, web and UI/UX, content creation, writing, creative direction">
+      <div class="track" aria-hidden="true">
+        <ul><li>Photography</li><li>Film</li><li>Digital art</li><li>Traditional art</li><li>3D</li><li>Branding</li><li>Web &amp; UI/UX</li><li>Content creation</li><li>Writing</li><li>Creative direction</li></ul>
+        <ul><li>Photography</li><li>Film</li><li>Digital art</li><li>Traditional art</li><li>3D</li><li>Branding</li><li>Web &amp; UI/UX</li><li>Content creation</li><li>Writing</li><li>Creative direction</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="snap">
+        <span class="tape" aria-hidden="true"></span>
+        <figure class="polaroid" style="margin:0">
+          <img src="assets/about-aria.jpg" alt="Aria in pink cat-eye glasses, a lilac top, and a white headband against a pink wall" width="1100" height="1100" loading="lazy">
+          <figcaption class="cap">it’s me, Aria!</figcaption>
+        </figure>
+        <span class="sticker a1">Multimedia Arts<br>NU Laguna</span>
+        <span class="sticker a2">Part-time<br>content creator</span>
+        <span class="sticker a4">Adobe Certified<br>Professional</span>
+        <span class="sticker a3" aria-hidden="true"></span>
+      </div>
+      <div class="bio">
+        <span class="hey">about me</span>
+        <h2>Everything I create is a reflection of who I am.</h2>
+        <p>I’m Ma. Teryn Gianna L. Nuza, also known as Aria. I’m a 4th-year Multimedia Arts student at National University Laguna and a part-time content creator.</p>
+        <p>My passion is turning ideas and emotions into stories across many mediums. My art is where I explore emotions, beauty, and stories that matter, often blending softness and playfulness with deeper themes like mental health, identity, and human connection.</p>
+        <p>My goal is to leave a mark on this world through my creations: work that captures attention, sparks emotion, and inspires others.</p>
+        <div class="note">
+          <span class="ps" aria-hidden="true">p.s.</span>
+          <p>I adapt easily to any style or kind of work a client needs. My personal work is where I create what best reflects me.</p>
+        </div>
+        <ul class="makes" aria-label="Mediums I work in">
+          <li>Film</li><li>Games</li><li>Animation</li><li>Web design</li><li>Photography</li><li>Branding</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- KIT / ENVELOPE -->
+  <section class="kit" id="kit">
+    <div class="wrap">
+      <div class="kit-copy">
+        <h2>What’s in my <span class="script">kit</span><span class="q" title="Tap me">?</span></h2>
+        <p class="lead">The tools I work in every day, and the skills I bring to a project. Tap the envelope to open it, and tap again to pack everything back in.</p>
+      </div>
+      <div class="stage" id="stage" role="button" tabindex="0" aria-label="Aria’s kit envelope with my tools and skills. Press to open or close." aria-pressed="false">
+        <div class="env-back"></div>
+        <div class="env-letter"></div>
+
+        <div class="item pill" style="--x:30;--y:8;--r:-5;--d:0">Creative direction</div>
+        <div class="item tile" style="--x:63;--y:8;--r:7;--d:1"><b>Ps</b><small>Photoshop</small></div>
+        <div class="item tile" style="--x:86;--y:12;--r:-8;--d:2"><b>Ai</b><small>Illustrator</small></div>
+        <div class="item tile" style="--x:12;--y:21;--r:-10;--d:3"><b>Fg</b><small>Figma</small></div>
+        <div class="item pill alt" style="--x:42;--y:22;--r:3;--d:4">Photography</div>
+        <div class="item pill" style="--x:74;--y:25;--r:-3;--d:5">Brand design</div>
+        <div class="item tile" style="--x:14;--y:35;--r:7;--d:6"><b>Pr</b><small>Premiere</small></div>
+        <div class="item tile" style="--x:36;--y:35;--r:-6;--d:7"><b>Lr</b><small>Lightroom</small></div>
+        <div class="item pill alt" style="--x:63;--y:38;--r:4;--d:8">UI/UX design</div>
+        <div class="item tile" style="--x:89;--y:37;--r:9;--d:9"><b>Bl</b><small>Blender</small></div>
+        <div class="item pill" style="--x:24;--y:49;--r:-3;--d:10">Film production</div>
+        <div class="item tile" style="--x:53;--y:50;--r:5;--d:11"><b>Cv</b><small>Canva</small></div>
+        <div class="item tile" style="--x:79;--y:49;--r:-7;--d:12"><b>Cc</b><small>CapCut</small></div>
+
+        <div class="env-flap" aria-hidden="true"><span class="env-seal"></span></div>
+        <div class="env-front"><svg class="folds" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 L50 52 L100 0 M0 100 L38 58 M100 100 L62 58" fill="none" stroke="rgba(255,244,249,.35)" stroke-width="1.4" vector-effect="non-scaling-stroke"/></svg><span class="lbl">Aria’s kit</span></div>
+        <span class="hint">Tap to open</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="wrap">
+      <div class="work-head">
+        <h2>Selected work</h2>
+        <p class="lead" style="margin:0">Pick a tab to see work by discipline.</p>
+      </div>
+
+      <div class="window">
+        <div class="tabbar" role="tablist" aria-label="Work categories">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <button role="tab" id="t-photo" aria-controls="p-photo" aria-selected="true">Photography</button>
+          <button role="tab" id="t-film" aria-controls="p-film" aria-selected="false" tabindex="-1">Writing/Directing</button>
+          <button role="tab" id="t-art" aria-controls="p-art" aria-selected="false" tabindex="-1">Art</button>
+          <button role="tab" id="t-3d" aria-controls="p-3d" aria-selected="false" tabindex="-1">3D</button>
+          <button role="tab" id="t-brand" aria-controls="p-brand" aria-selected="false" tabindex="-1">Branding</button>
+          <button role="tab" id="t-gd" aria-controls="p-gd" aria-selected="false" tabindex="-1">Graphic Design</button>
+          <button role="tab" id="t-cc" aria-controls="p-cc" aria-selected="false" tabindex="-1">Content Creation</button>
+          <button role="tab" id="t-hm" aria-controls="p-hm" aria-selected="false" tabindex="-1">Hair &amp; Makeup</button>
+          <button role="tab" id="t-web" aria-controls="p-web" aria-selected="false" tabindex="-1">Web &amp; UI/UX</button>
+        </div>
+
+        <!-- PHOTOGRAPHY -->
+        <div class="panel" role="tabpanel" id="p-photo" aria-labelledby="t-photo" tabindex="0">
+          <p class="panel-intro">Portraits, events, street, and landscape work shot under Likha by Teryn Gianna. Tap a shoot to flip through the full set.</p>
+          <div class="grid" id="shoots"></div>
+        </div>
+
+        <!-- FILM -->
+        <div class="panel" role="tabpanel" id="p-film" aria-labelledby="t-film" tabindex="0" hidden>
+          <div class="case">
+            <div class="case-top" id="w-siklo">
+              <img class="zoom poster" src="assets/film-siklo.jpg" alt="Siklo movie poster" width="687" height="1024" loading="lazy" data-group="siklo">
+              <div>
+                <h3 class="big">Siklo</h3>
+                <span class="made">Written &amp; Directed by Teryn Gianna</span>
+                <p>A lost girl on the edge of despair finds solace with a boy she unexpectedly encounters. As he guides her toward healing, she learns that breaking the cycle of suffering is the only way to truly be free.</p>
+                <div class="chips">
+                  <span class="tag">Screened at SM Cinema</span>
+                  <span class="tag">Tanglaw Tanghal</span>
+                  <span class="tag">Sine Obscura</span>
+                  <span class="tag">MMAP CALABARZON Balintataw</span>
+                  <span class="tag">Cinema Primera Regional Film Festival</span>
+                  <span class="tag">Boses ng Pagbabago Special Award, Gawad Likha 2025</span>
+                  <span class="tag">Best Supporting Actor, Balintataw 2025</span>
+                </div>
+                <div class="links">
+                  <a class="btn btn-solid sm" href="https://youtu.be/JqxlmyXBjnE" target="_blank" rel="noopener">Watch the film</a>
+                  <a class="btn btn-line sm" href="https://www.facebook.com/share/v/1HY9TgqjZH/" target="_blank" rel="noopener">Watch the trailer</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-top" id="w-lastsummer">
+              <div class="vid"><video src="assets/game-lastsummer.mp4" poster="assets/game-lastsummer-poster.jpg" controls playsinline preload="none" aria-label="Last Summer, visual novel gameplay"></video></div>
+              <div>
+                <h3 class="big">Last Summer</h3>
+                <span class="made">Written &amp; Directed by Teryn Gianna</span>
+                <p>A story-driven visual novel game. Press play to watch a full playthrough.</p>
+              </div>
+            </div>
+
+            <div>
+              <h4>More writing and directing</h4>
+              <div class="grid wide-grid">
+                <figure class="proj" id="w-akoto">
+                  <div class="vid"><video src="assets/film-akoto.mp4" poster="assets/film-akoto-poster.jpg" controls playsinline preload="none" aria-label="Ako To, short film"></video></div>
+                  <figcaption><h3>Ako To</h3><p>Short horror and psychological thriller film.</p><span class="tag">Written &amp; Directed by Teryn Gianna</span></figcaption>
+                </figure>
+                <figure class="proj" id="w-growup">
+                  <div class="vid"><video src="assets/film-growup.mp4" poster="assets/film-growup-poster.jpg" controls playsinline preload="none" aria-label="When I Grow Up, short video"></video></div>
+                  <figcaption><h3>When I Grow Up</h3><p>Reached 1.5 million views on Instagram.</p><span class="tag">Written &amp; Directed by Teryn Gianna</span></figcaption>
+                </figure>
+                <figure class="proj" id="w-lastdraft">
+                  <img class="zoom" src="assets/film-lastdraft.jpg" alt="Title card of The Last Draft" loading="lazy" data-group="film">
+                  <figcaption><h3>The Last Draft</h3><p>Interactive short film where viewers choose the ending.</p>
+                    <div class="links"><a class="btn btn-solid sm" href="https://player.stornaway.io/watch/af47f3ca" target="_blank" rel="noopener">Play it</a><a class="btn btn-line sm" href="https://www.youtube.com/playlist?list=PLw-6BK5O5gpsEXSoVQjdIqIDPnfusY4OI" target="_blank" rel="noopener">Watch recorded</a></div>
+                  </figcaption>
+                </figure>
+                <figure class="proj" id="w-outoftempo">
+                  <img class="zoom" src="assets/film-outoftempo.jpg" alt="Title frame of the Out of Tempo Out of Time music video" loading="lazy" data-group="film">
+                  <figcaption><h3>Out of Tempo Out of Time</h3><p>Official music video for Neytan.</p><span class="tag">Written by Teryn Gianna</span>
+                    <div class="links"><a class="btn btn-solid sm" href="https://youtu.be/Ln5QzaI80Bo" target="_blank" rel="noopener">Watch the video</a></div>
+                  </figcaption>
+                </figure>
+                <figure class="proj" id="w-brwtl-ad">
+                  <img class="zoom" src="assets/film-brwtl.jpg" alt="BRWTL Coffee Shop drinks and Instagram profile" loading="lazy" data-group="film">
+                  <figcaption><h3>BRWTL Commercial</h3><p>Brand campaign for BRWTL Coffee Shop with 12epublic.</p><span class="tag">Written &amp; Directed by Teryn Gianna</span>
+                    <div class="links"><a class="btn btn-solid sm" href="https://www.facebook.com/share/v/1CDQwhsrEX/" target="_blank" rel="noopener">Watch the ad</a></div>
+                  </figcaption>
+                </figure>
+                <figure class="proj" id="w-castingcall">
+                  <img class="zoom" src="assets/film-castingcall-0.jpg" alt="Casting Call poster with the Circus Productions logo" loading="lazy" data-group="casting"><img class="zoom" hidden src="assets/film-castingcall-1.jpg" alt="Circus Productions team, 2nd Best Live Production" loading="lazy" data-group="casting"><img class="zoom" hidden src="assets/film-castingcall-2.jpg" alt="Teryn Gianna at work as casting director" loading="lazy" data-group="casting"><img class="zoom" hidden src="assets/film-castingcall-3.jpg" alt="Casting Call live on the monitor during the show" loading="lazy" data-group="casting">
+                  <figcaption><h3>Casting Call</h3><p>Live production by Circus Productions. Casting director, hair and makeup, and BTS photographer.</p><span class="tag">2nd Place, Best Live Production, Gawad Likha 2026</span>
+                    <div class="links"><a class="btn btn-solid sm" href="https://www.facebook.com/share/v/1D1UScv11b/" target="_blank" rel="noopener">Watch the show</a></div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ART -->
+        <div class="panel" role="tabpanel" id="p-art" aria-labelledby="t-art" tabindex="0" hidden>
+          <div class="case">
+            <div class="case-top" id="w-athens">
+              <img class="zoom" src="assets/illus-final.jpg" alt="Athens’ Dollhouse: a girl in a rose-covered hat and pink ruffled dress holding a vintage doll" width="1333" height="2000" loading="lazy" data-group="athens">
+              <div>
+                <h3 class="big">Athens’ Dollhouse</h3>
+                <span class="made">Digital illustration, made in Ibis Paint X</span>
+                <p>A digital illustration inspired by my friend, Athens Gutierrez, who shares my love for femininity, pink, dolls, and coquette-inspired aesthetics.</p>
+                <p>Inspired by vintage dolls, pastel colors, ribbons, roses, and romantic details, I imagined Athens as a character in her own little dollhouse. The piece explores femininity, nostalgia, and the parts of childhood we carry with us as we grow older.</p>
+              </div>
+            </div>
+
+            <div class="ref">
+              <img class="zoom" src="assets/illus-reference.jpg" alt="Reference photo of Athens Gutierrez in a pink ruffled dress" width="800" height="1188" loading="lazy" data-group="athens">
+              <div>
+                <h4>The reference</h4>
+                <p style="margin:0">I started from Athens’ own photo, then pushed it toward a softer, doll-like look with Douyin-inspired makeup, lace textures, and glitter.</p>
+                <p style="margin:.6rem 0 0;font-size:.9rem">Photo by Athens Gutierrez, @babydollscakee</p>
+              </div>
+            </div>
+
+            <div>
+              <h4>A soft palette</h4>
+              <p style="margin-top:0">Pink leads, with warm neutrals and muted green to keep the piece balanced.</p>
+              <div class="swatches">
+                <div class="sw"><i style="background:#B8BF8F"></i><b>Sage</b>#B8BF8F</div>
+                <div class="sw"><i style="background:#F7E0DA"></i><b>Skin</b>#F7E0DA</div>
+                <div class="sw"><i style="background:#F6E4C3"></i><b>Doll</b>#F6E4C3</div>
+                <div class="sw"><i style="background:#ECBFAC"></i><b>Hair</b>#ECBFAC</div>
+                <div class="sw"><i style="background:#EFC3C4"></i><b>Dress</b>#EFC3C4</div>
+                <div class="sw"><i style="background:#FBA6B6"></i><b>Rose</b>#FBA6B6</div>
+              </div>
+            </div>
+
+            <div>
+              <h4>The process</h4>
+              <div class="row r5">
+                <figure><img class="zoom" src="assets/illus-step-1.jpg" alt="Step 1, rough sketch" loading="lazy" data-group="athens-steps"><figcaption>1. Sketch<small>Pose, proportions, and composition</small></figcaption></figure>
+                <figure><img class="zoom" src="assets/illus-step-2.jpg" alt="Step 2, clean line art" loading="lazy" data-group="athens-steps"><figcaption>2. Line art<small>Refining forms and features</small></figcaption></figure>
+                <figure><img class="zoom" src="assets/illus-step-3.jpg" alt="Step 3, flat base colors" loading="lazy" data-group="athens-steps"><figcaption>3. Base colors<small>Setting the palette</small></figcaption></figure>
+                <figure><img class="zoom" src="assets/illus-step-4.jpg" alt="Step 4, shading" loading="lazy" data-group="athens-steps"><figcaption>4. Shading<small>Shadows, highlights, depth</small></figcaption></figure>
+                <figure><img class="zoom" src="assets/illus-step-5.jpg" alt="Step 5, final rendering" loading="lazy" data-group="athens-steps"><figcaption>5. Rendering<small>Textures, lighting, detail</small></figcaption></figure>
+              </div>
+            </div>
+
+            <div id="w-digital">
+              <h4>Digital art</h4>
+              <div class="gallery">
+                  <figure><img class="zoom" src="assets/art-d-the-cure.jpg" alt="Girl in a nurse uniform lying in a hospital bed tangled in red string, with anatomical hearts on trays" loading="lazy" data-group="digital"><figcaption><b>The Cure</b></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-d-sophia.jpg" alt="Portrait of a bride with dark hair and a lace veil" loading="lazy" data-group="digital"><figcaption><b>Sophia</b></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-d-mary.jpg" alt="Portrait of a girl with pink hair framed in black lace" loading="lazy" data-group="digital"><figcaption><b>Mary</b></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-d-quert.jpg" alt="Young man in a pink tank top holding a skateboard against a dark floral wall" loading="lazy" data-group="digital"><figcaption><b>Quert</b></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-d-summer-26.jpg" alt="Three-panel beach scene: a pink Barbie cap and clapperboard, a girl taking a selfie, and the shore" loading="lazy" data-group="digital"><figcaption><b>Summer of ’26</b></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-d-dsyr.jpg" alt="Realistic portrait of a woman with black hair and bangs" loading="lazy" data-group="digital"><figcaption><b>DSYR</b></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-d-sir.jpg" alt="Smiling man in a pink and black collared shirt" loading="lazy" data-group="digital"><figcaption><b>Sir</b></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-d-smilky.jpg" alt="Dark, scratchy abstract piece in black and red" loading="lazy" data-group="digital"><figcaption><b>Smilky</b></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-d-untitled-duo.jpg" alt="A couple lying head to head on the grass" loading="lazy" data-group="digital"><figcaption><b>Last Night on Earth</b></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-d-untitled-blonde.jpg" alt="Portrait of a blonde girl in a black top" loading="lazy" data-group="digital"><figcaption><b>Ari</b></figcaption></figure>
+              </div>
+            </div>
+
+            <div id="w-traditional">
+              <h4>Traditional art</h4>
+              <p style="margin-top:0">Paintings on canvas, tote bags, and more, made by hand.</p>
+              <div class="gallery">
+                  <figure><img class="zoom" src="assets/art-t-pipiliin-ka-sa-araw-araw-2.jpg" alt="Painting of two couples under glowing silhouette trees" loading="lazy" data-group="trad"><img class="zoom" hidden src="assets/art-t-pipiliin-ka-sa-araw-araw.jpg" alt="Pipiliin Ka Sa Araw Araw, both canvases" loading="lazy" data-group="trad"><figcaption><b>Pipiliin Ka Sa Araw Araw</b><small>Painting</small></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-t-its-okay-not-to-be-okay.jpg" alt="Painting of two kids under a starry, Van Gogh-style sky" loading="lazy" data-group="trad"><figcaption><b>It’s Okay Not To Be Okay</b><small>Painting</small></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-t-audrey-hepburn.jpg" alt="Painting of a woman in a black hat, dress, and red cape" loading="lazy" data-group="trad"><figcaption><b>Audrey Hepburn</b><small>Painting</small></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-t-roadtrips-daydreams.jpg" alt="Tote bag painted with a road at sunset" loading="lazy" data-group="trad"><figcaption><b>Roadtrips &amp; Daydreams</b><small>Painted tote bag</small></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-t-chasing-waterfalls.jpg" alt="Tote bag painted with a blue waterfall" loading="lazy" data-group="trad"><figcaption><b>Chasing Waterfalls</b><small>Painted tote bag</small></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-t-ocean-tears.jpg" alt="Tote bag painted with a beach and sea" loading="lazy" data-group="trad"><figcaption><b>Ocean Tears</b><small>Painted tote bag</small></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-t-afternoon-daze.jpg" alt="Small painting of power lines against an orange sunset" loading="lazy" data-group="trad"><figcaption><b>Afternoon Daze</b><small>Painting</small></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-t-cotton-candy-skies.jpg" alt="Small painting of pink and purple skies over mountains" loading="lazy" data-group="trad"><figcaption><b>Cotton Candy Skies</b><small>Painting</small></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-t-fujis-blossoms.jpg" alt="Small painting of Mount Fuji with pink blossoms" loading="lazy" data-group="trad"><figcaption><b>Fuji’s Blossoms</b><small>Painting</small></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-t-here-i-go-again.jpg" alt="Small painting of the sea under a blue sky" loading="lazy" data-group="trad"><figcaption><b>Here I Go Again</b><small>Painting</small></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-t-love-birds.jpg" alt="Small painting of two birds on a branch" loading="lazy" data-group="trad"><figcaption><b>Love Birds</b><small>Painting</small></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-t-baby.jpg" alt="Face mask painted with a flowered letter" loading="lazy" data-group="trad"><figcaption><b>Baby</b><small>Painted face mask</small></figcaption></figure>
+                  <figure><img class="zoom" src="assets/art-t-mural.jpg" alt="Community mural painting in progress" loading="lazy" data-group="trad"><figcaption><b>Community mural</b><small>Mural</small></figcaption></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D -->
+        <div class="panel" role="tabpanel" id="p-3d" aria-labelledby="t-3d" tabindex="0" hidden>
+          <div class="case">
+            <div class="case-top" id="w-room">
+              <img class="zoom" src="assets/3d-cover.jpg" alt="Isometric 3D render of a pink bedroom in daylight with an ‘Aria’ neon sign" width="1800" height="1800" loading="lazy" data-group="room">
+              <div>
+                <h3 class="big">3D Isometric Room</h3>
+                <span class="made">Modeled, lit, and rendered in Blender</span>
+                <p>A stylized recreation of my own bedroom, built around a soft, feminine, and playful look. I wanted to see how color, composition, and small curated details could show personality through a space.</p>
+                <p>The pink palette and decor pieces keep the whole room feeling like one small world.</p>
+              </div>
+            </div>
+
+            <div>
+              <h4>How it’s built</h4>
+              <div class="row r4">
+                <figure><img class="zoom" src="assets/3d-view-wireframe.jpg" alt="Wireframe view in Blender" loading="lazy" data-group="room-views"><figcaption>Wireframe</figcaption></figure>
+                <figure><img class="zoom" src="assets/3d-view-solid.jpg" alt="Solid view in Blender" loading="lazy" data-group="room-views"><figcaption>Solid</figcaption></figure>
+                <figure><img class="zoom" src="assets/3d-view-material.jpg" alt="Material preview in Blender" loading="lazy" data-group="room-views"><figcaption>Material preview</figcaption></figure>
+                <figure><img class="zoom" src="assets/3d-view-rendered.jpg" alt="Rendered view in Blender" loading="lazy" data-group="room-views"><figcaption>Rendered</figcaption></figure>
+              </div>
+            </div>
+
+            <div>
+              <h4>Day and night</h4>
+              <div class="row r2">
+                <figure><img class="zoom" src="assets/3d-day.jpg" alt="Room lit by warm daylight" loading="lazy" data-group="room-light"><figcaption>Day<small>Warm sunlight through the windows</small></figcaption></figure>
+                <figure><img class="zoom" src="assets/3d-night.jpg" alt="Room at night lit by the pink neon sign" loading="lazy" data-group="room-light"><figcaption>Night<small>The neon sign becomes the main light</small></figcaption></figure>
+              </div>
+            </div>
+
+            <div>
+              <h4>Close-ups</h4>
+              <div class="row r4">
+                <figure><img class="zoom" src="assets/3d-close-1.jpg" alt="Close-up of the desk with a laptop and sketches" loading="lazy" data-group="room-close"></figure>
+                <figure><img class="zoom" src="assets/3d-close-2.jpg" alt="Close-up of the desk shelves and books" loading="lazy" data-group="room-close"></figure>
+                <figure><img class="zoom" src="assets/3d-close-3.jpg" alt="Close-up of the vanity mirror and plush" loading="lazy" data-group="room-close"></figure>
+                <figure><img class="zoom" src="assets/3d-close-4.jpg" alt="Close-up of the cat plush by the bookshelf" loading="lazy" data-group="room-close"></figure>
+              </div>
+            </div>
+
+            <div id="w-anim">
+              <h4>3D animations</h4>
+              <div class="reel r-a">
+                <figure><div class="vid"><video class="loop" src="assets/3d-anim-home.mp4" poster="assets/3d-anim-home-poster.jpg" muted loop playsinline controls preload="none" aria-label="Home, 3D animation"></video></div><figcaption><b>Home</b><small>A short animation set in a pink bedroom</small></figcaption></figure>
+                <figure><div class="vid"><video class="loop" src="assets/3d-anim-barbie.mp4" poster="assets/3d-anim-barbie-poster.jpg" muted loop playsinline controls preload="none" aria-label="Hey Barbie, 3D animation"></video></div><figcaption><b>Hey Barbie</b><small>A pink convertible cruising down the road</small></figcaption></figure>
+              </div>
+              <div class="reel r-b">
+                <figure><div class="vid"><video class="loop" src="assets/3d-anim-cosmetics.mp4" poster="assets/3d-anim-cosmetics-poster.jpg" muted loop playsinline controls preload="none" aria-label="Aria Cosmetics, 3D product animation"></video></div><figcaption><b>Aria Cosmetics</b><small>A 3D lipstick product animation</small></figcaption></figure>
+                <figure><div class="vid tall"><video class="loop" src="assets/3d-anim-gumball.mp4" poster="assets/3d-anim-gumball-poster.jpg" muted loop playsinline controls preload="none" aria-label="Gumball, 3D animation"></video></div><figcaption><b>Gumball</b></figcaption></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BRANDING -->
+        <div class="panel" role="tabpanel" id="p-brand" aria-labelledby="t-brand" tabindex="0" hidden>
+          <p class="panel-intro">Full brand identities, from logo and mascot to color, type, and mockups. Tap any page to flip through the brand book.</p>
+
+          <article class="bbook bb-brwtl" id="w-brwtl-brand">
+            <div class="bb-head">
+              <div class="bb-cover"><img class="zoom" data-i="1" src="assets/brand-brwtl-01.jpg" alt="BRWTL brand guidelines cover with the coffee cup mascot" loading="lazy" data-group="brwtl-book"></div>
+              <div class="bb-text">
+                <span class="bb-kicker">Brand guidelines</span>
+                <h3>BRWTL</h3>
+                <p class="bb-tag">Bold Brews. Warm Hearts.</p>
+                <p>A café in San Pablo City that started in 2021 selling bottled and drip coffee. Its mascot, a coffee cup with a mustache, carries the brand’s bold but playful personality.</p>
+                <div class="bb-voice" aria-label="Brand voice"><span>Bold</span><span>Playful</span><span>Grounded</span><span>Faith-rooted</span></div>
+                <div class="bb-sw">
+                  <span><i style="background:#5A3A25"></i>Mocha<small>#5A3A25</small></span>
+                  <span><i style="background:#9A713B"></i>Caramel Macchiato<small>#9A713B</small></span>
+                  <span><i style="background:#F6F2DD"></i>Vanilla Latte<small>#F6F2DD</small></span>
+                  <span><i style="background:#110702"></i>Barako Bold<small>#110702</small></span>
+                </div>
+                <div class="fl-type"><span class="t3">Sinkin Sans Black Italic</span>
+                </div>
+                <p class="bb-credit">I was Project Head, working with The 12EPUBLIC team.</p>
+                <div class="links">
+                  <button class="btn bb-btn sm" type="button" data-flip="w-brwtl-brand">Flip through the brand book</button>
+                  <a class="btn bb-line sm" href="https://www.behance.net/gallery/253838467/BRWTL-BRAND-PORTFOLIO" target="_blank" rel="noopener">See it on Behance</a>
+                </div>
+              </div>
+            </div>
+            <div class="bb-pages">
+              <figure><img class="zoom" data-i="7" src="assets/brand-brwtl-07.jpg" alt="BRWTL Primary and secondary logos" loading="lazy" data-group="brwtl-book"><figcaption>Logos</figcaption></figure>
+              <figure><img class="zoom" data-i="8" src="assets/brand-brwtl-08.jpg" alt="BRWTL Mascot logo" loading="lazy" data-group="brwtl-book"><figcaption>Mascot</figcaption></figure>
+              <figure><img class="zoom" data-i="16" src="assets/brand-brwtl-16.jpg" alt="BRWTL Color palette: Mocha, Caramel Macchiato, Vanilla Latte, Barako Bold" loading="lazy" style="object-position:100% 50%" data-group="brwtl-book"><figcaption>Palette</figcaption></figure>
+              <figure><img class="zoom" data-i="17" src="assets/brand-brwtl-17.jpg" alt="BRWTL Primary typeface, Sinkin Sans" loading="lazy" data-group="brwtl-book"><figcaption>Typography</figcaption></figure>
+              <figure><img class="zoom" data-i="15" src="assets/brand-brwtl-15.jpg" alt="BRWTL Logo pattern and app icon" loading="lazy" data-group="brwtl-book"><figcaption>Pattern and app icon</figcaption></figure>
+              <figure><img class="zoom" data-i="21" src="assets/brand-brwtl-21.jpg" alt="BRWTL Loyalty cards, app, and signage mockups" loading="lazy" data-group="brwtl-book"><figcaption>Mockups</figcaption></figure>
+            </div>
+            <img class="zoom" hidden data-i="3" src="assets/brand-brwtl-03.jpg" alt="BRWTL Table of contents" loading="lazy" data-group="brwtl-book">
+            <img class="zoom" hidden data-i="4" src="assets/brand-brwtl-04.jpg" alt="BRWTL Introduction and about the brand" loading="lazy" data-group="brwtl-book">
+            <img class="zoom" hidden data-i="5" src="assets/brand-brwtl-05.jpg" alt="BRWTL Brand history, mission, and vision" loading="lazy" data-group="brwtl-book">
+            <img class="zoom" hidden data-i="6" src="assets/brand-brwtl-06.jpg" alt="BRWTL Brand voice" loading="lazy" data-group="brwtl-book">
+            <img class="zoom" hidden data-i="9" src="assets/brand-brwtl-09.jpg" alt="BRWTL Logo meaning and construction" loading="lazy" data-group="brwtl-book">
+            <img class="zoom" hidden data-i="10" src="assets/brand-brwtl-10.jpg" alt="BRWTL Safe zone and logo scale" loading="lazy" data-group="brwtl-book">
+            <img class="zoom" hidden data-i="11" src="assets/brand-brwtl-11.jpg" alt="BRWTL Logo placement and colors" loading="lazy" data-group="brwtl-book">
+            <img class="zoom" hidden data-i="12" src="assets/brand-brwtl-12.jpg" alt="BRWTL Logo on photography" loading="lazy" data-group="brwtl-book">
+            <img class="zoom" hidden data-i="13" src="assets/brand-brwtl-13.jpg" alt="BRWTL Logo usage do’s" loading="lazy" data-group="brwtl-book">
+            <img class="zoom" hidden data-i="14" src="assets/brand-brwtl-14.jpg" alt="BRWTL Logo usage don’ts" loading="lazy" data-group="brwtl-book">
+            <img class="zoom" hidden data-i="18" src="assets/brand-brwtl-18.jpg" alt="BRWTL Photography style" loading="lazy" data-group="brwtl-book">
+            <img class="zoom" hidden data-i="19" src="assets/brand-brwtl-19.jpg" alt="BRWTL Packaging mockups" loading="lazy" data-group="brwtl-book">
+            <img class="zoom" hidden data-i="20" src="assets/brand-brwtl-20.jpg" alt="BRWTL Merch and stationery mockups" loading="lazy" data-group="brwtl-book">
+            <img class="zoom" hidden data-i="23" src="assets/brand-brwtl-23.jpg" alt="BRWTL The 12EPUBLIC team credits" loading="lazy" data-group="brwtl-book">
+          </article>
+
+          <article class="bbook bb-fleur" id="w-fleurever">
+            <div class="bb-head">
+              <div class="bb-cover"><img class="zoom" data-i="1" src="assets/brand-fleur-1.jpg" alt="Fleurever brand identity cover in olive green with a blush flower logo" loading="lazy" data-group="fleur-book"></div>
+              <div class="bb-text">
+                <span class="bb-kicker">Brand identity</span>
+                <h3 class="fl-name">fleurever<small>likha by tg</small></h3>
+                <p>The identity for my flower business, Fleurever. A blooming flower mark, a hand-written script, and a soft olive and blush palette that feels like a fresh bouquet.</p>
+                <div class="bb-sw">
+                  <span><i style="background:#7A8450"></i>Olive<small>#7A8450</small></span>
+                  <span><i style="background:#FACED6"></i>Blush<small>#FACED6</small></span>
+                </div>
+                <div class="fl-type">
+                  <span class="t1">Pinyon Script</span>
+                  <span class="t2">Times New Roman Condensed</span>
+                </div>
+                <div class="links"><button class="btn bb-btn sm" type="button" data-flip="w-fleurever">Flip through the brand book</button></div>
+              </div>
+            </div>
+            <div class="bb-pages">
+              <figure><img class="zoom" data-i="2" src="assets/brand-fleur-2.jpg" alt="Fleurever primary and secondary logos" loading="lazy" data-group="fleur-book"><figcaption>Logos</figcaption></figure>
+              <figure><img class="zoom" data-i="3" src="assets/brand-fleur-3.jpg" alt="Fleurever logo on olive, blush, white, and black" loading="lazy" data-group="fleur-book"><figcaption>Color versions</figcaption></figure>
+              <figure><img class="zoom" data-i="4" src="assets/brand-fleur-4.jpg" alt="Fleurever color palette" loading="lazy" data-group="fleur-book"><figcaption>Palette</figcaption></figure>
+              <figure><img class="zoom" data-i="5" src="assets/brand-fleur-5.jpg" alt="Fleurever typography" loading="lazy" data-group="fleur-book"><figcaption>Typography</figcaption></figure>
+              <figure><img class="zoom" data-i="6" src="assets/brand-fleur-6.jpg" alt="Fleurever blush flower pattern" loading="lazy" data-group="fleur-book"><figcaption>Pattern</figcaption></figure>
+            </div>
+          </article>
+        </div>
+
+        <!-- GRAPHIC DESIGN -->
+        <div class="panel" role="tabpanel" id="p-gd" aria-labelledby="t-gd" tabindex="0" hidden>
+          <p class="panel-intro">Posters, editorial layouts, and print pieces. Tap one to see it up close.</p>
+          <div class="wall" id="w-gd">
+            <figure class="pin"><img class="zoom" src="assets/gd-wicked.jpg" alt="Wicked poster in pink and green with a witch silhouette" loading="lazy" data-group="gd"><figcaption><b>Wicked</b><small>Poster</small></figcaption></figure>
+            <figure class="pin"><img class="zoom" src="assets/gd-defying-gravity.jpg" alt="The Pink Chronicle newspaper layout about Wicked, titled Defying Gravity" loading="lazy" data-group="gd"><figcaption><b>Defying Gravity</b><small>Editorial layout</small></figcaption></figure>
+            <figure class="pin"><img class="zoom" src="assets/gd-mirrorball.jpg" alt="Mirrorball cover art with a girl sitting on a disco ball" loading="lazy" data-group="gd"><figcaption><b>Mirrorball</b><small>Cover art</small></figcaption></figure>
+            <figure class="pin"><img class="zoom" src="assets/gd-nothing-new.jpg" alt="Pink typographic poster: How can a person know everything at 18 but nothing at 22" loading="lazy" data-group="gd"><figcaption><b>Nothing New</b><small>Poster</small></figcaption></figure>
+            <figure class="pin"><img class="zoom" src="assets/gd-lucid-dreams.jpg" alt="Blue and purple typographic poster, I have these lucid dreams" loading="lazy" data-group="gd"><figcaption><b>Lucid Dreams</b><small>Poster</small></figcaption></figure>
+            <figure class="pin"><img class="zoom" src="assets/gd-coffee-please.jpg" alt="Red wavy type reading Coffee Please Please Please" loading="lazy" data-group="gd"><figcaption><b>Coffee Please</b><small>Typography</small></figcaption></figure>
+            <figure class="pin"><img class="zoom" src="assets/gd-nu-brochure.jpg" alt="NU Laguna admissions brochure in blue and yellow" loading="lazy" data-group="gd"><figcaption><b>NU Brochure</b><small>Brochure</small></figcaption></figure>
+          </div>
+        </div>
+
+        <!-- CONTENT CREATION -->
+        <div class="panel" role="tabpanel" id="p-cc" aria-labelledby="t-cc" tabindex="0" hidden>
+          <div class="cc-stats" id="w-cc">
+            <div class="stat"><b>50+</b><span>brands worked with</span></div>
+            <div class="stat"><b>7M</b><span>views on my top TikTok</span></div>
+            <div class="stat"><b>1.2M</b><span>likes on TikTok</span></div>
+          </div>
+          <div class="links" style="justify-content:center;margin:1.2rem 0 2.4rem">
+            <a class="btn btn-solid sm" href="https://www.tiktok.com/@pinkveilari" target="_blank" rel="noopener">TikTok @pinkveilari</a>
+            <a class="btn btn-line sm" href="https://www.instagram.com/aria.not.grande/" target="_blank" rel="noopener">Instagram @aria.not.grande</a>
+          </div>
+          <h4>Videos</h4>
+          <div class="phones" id="w-cc-videos">
+            <figure><div class="phonef"><video src="assets/cc-lifestyle.mp4" poster="assets/cc-lifestyle-poster.jpg" controls playsinline preload="none" aria-label="Lifestyle video"></video></div><figcaption>Lifestyle</figcaption></figure>
+            <figure><div class="phonef"><video src="assets/cc-review.mp4" poster="assets/cc-review-poster.jpg" controls playsinline preload="none" aria-label="Makeup review video"></video></div><figcaption>Makeup review</figcaption></figure>
+            <figure><div class="phonef"><video src="assets/cc-tutorial.mp4" poster="assets/cc-tutorial-poster.jpg" controls playsinline preload="none" aria-label="Makeup tutorial video"></video></div><figcaption>Makeup tutorial</figcaption></figure>
+            <figure><div class="phonef"><video src="assets/cc-transform.mp4" poster="assets/cc-transform-poster.jpg" controls playsinline preload="none" aria-label="Makeup transformation video"></video></div><figcaption>Makeup transformation</figcaption></figure>
+            <figure><div class="phonef"><video src="assets/cc-test.mp4" poster="assets/cc-test-poster.jpg" controls playsinline preload="none" aria-label="Makeup test video"></video></div><figcaption>Makeup test</figcaption></figure>
+            <figure><div class="phonef"><video src="assets/cc-ugc.mp4" poster="assets/cc-ugc-poster.jpg" controls playsinline preload="none" aria-label="UGC product video"></video></div><figcaption>UGC</figcaption></figure>
+          </div>
+          <h4>Brand photos</h4>
+          <div class="sq-grid">
+            <img class="zoom" src="assets/cc-photo-1.jpg" alt="Brand content photo 1" loading="lazy" data-group="cc">
+            <img class="zoom" src="assets/cc-photo-2.jpg" alt="Brand content photo 2" loading="lazy" data-group="cc">
+            <img class="zoom" src="assets/cc-photo-3.jpg" alt="Brand content photo 3" loading="lazy" data-group="cc">
+            <img class="zoom" src="assets/cc-photo-4.jpg" alt="Brand content photo 4" loading="lazy" data-group="cc">
+            <img class="zoom" src="assets/cc-photo-5.jpg" alt="Brand content photo 5" loading="lazy" data-group="cc">
+            <img class="zoom" src="assets/cc-photo-6.jpg" alt="Brand content photo 6" loading="lazy" data-group="cc">
+            <img class="zoom" src="assets/cc-photo-7.jpg" alt="Brand content photo 7" loading="lazy" data-group="cc">
+            <img class="zoom" src="assets/cc-photo-8.jpg" alt="Brand content photo 8" loading="lazy" data-group="cc">
+            <img class="zoom" src="assets/cc-photo-9.jpg" alt="Brand content photo 9" loading="lazy" data-group="cc">
+            <img class="zoom" src="assets/cc-photo-10.jpg" alt="Brand content photo 10" loading="lazy" data-group="cc">
+          </div>
+        </div>
+
+        <!-- HAIR & MAKEUP -->
+        <div class="panel" role="tabpanel" id="p-hm" aria-labelledby="t-hm" tabindex="0" hidden>
+          <div class="hm-top" id="w-hm">
+            <figure><div class="phonef"><video src="assets/hmua-video.mp4" poster="assets/hmua-video-poster.jpg" controls playsinline preload="none" aria-label="Makeup transformation video"></video></div></figure>
+            <div>
+              <h3 class="big">Hair &amp; Makeup</h3>
+              <span class="made">Under Likha by TG</span>
+              <p>Glam for graduation photos, events, and shoots, from soft and natural to full glam. Each photo shows one look from different angles.</p>
+              <div class="links"><a class="btn btn-solid sm" data-email href="mailto:arianotgrande.collab@gmail.com?subject=Inquiry%3A%20Hair%20%26%20makeup">Book a glam session</a></div>
+            </div>
+          </div>
+          <div class="sq-grid four">
+            <img class="zoom" src="assets/hmua-1.jpg" alt="Hair and makeup look 1 by Likha by TG" loading="lazy" data-group="hmua">
+            <img class="zoom" src="assets/hmua-2.jpg" alt="Hair and makeup look 2 by Likha by TG" loading="lazy" data-group="hmua">
+            <img class="zoom" src="assets/hmua-3.jpg" alt="Hair and makeup look 3 by Likha by TG" loading="lazy" data-group="hmua">
+            <img class="zoom" src="assets/hmua-4.jpg" alt="Hair and makeup look 4 by Likha by TG" loading="lazy" data-group="hmua">
+            <img class="zoom" src="assets/hmua-5.jpg" alt="Hair and makeup look 5 by Likha by TG" loading="lazy" data-group="hmua">
+            <img class="zoom" src="assets/hmua-6.jpg" alt="Hair and makeup look 6 by Likha by TG" loading="lazy" data-group="hmua">
+            <img class="zoom" src="assets/hmua-7.jpg" alt="Hair and makeup look 7 by Likha by TG" loading="lazy" data-group="hmua">
+            <img class="zoom" src="assets/hmua-8.jpg" alt="Hair and makeup look 8 by Likha by TG" loading="lazy" data-group="hmua">
+          </div>
+        </div>
+
+        <!-- WEB -->
+        <div class="panel" role="tabpanel" id="p-web" aria-labelledby="t-web" tabindex="0" hidden>
+          <p class="panel-intro">Websites and app screens, from UX structure to final design. Tap a screenshot to see more.</p>
+          <div class="grid wide-grid">
+            <figure class="proj" id="w-gsd">
+              <img class="zoom" src="assets/web-gsd-home.jpg" alt="GSD homepage: Get Stuff Done, your technology department without the department" loading="lazy" data-group="gsd">
+              <figcaption><h3>GetSitDone</h3><p>Website redesign for a tech consultancy: new navigation, sitemap, user flows, and wireframes.</p><span class="tag">Client</span>
+                <div class="links"><a class="btn btn-solid sm" href="https://getsitdone.ai/" target="_blank" rel="noopener">Visit the live site</a></div>
+              </figcaption>
+            </figure>
+            <figure class="proj" id="w-liliw">
+              <img class="zoom" src="assets/web-liliw-home.jpg" alt="Liliw Lokal homepage with the colorful Liliw Lokal logo over a forest video" loading="lazy" data-group="liliw">
+              <img class="zoom" hidden src="assets/web-liliw-biz.jpg" alt="Liliw Lokal business page for OBQ Pizza" loading="lazy" data-group="liliw">
+              <img class="zoom" hidden src="assets/web-liliw-mobile.jpg" alt="Liliw Lokal homepage on a phone" loading="lazy" data-group="liliw">
+              <figcaption><h3>Liliw Lokal</h3><p>Promotional website for local food, tourism, and hospitality businesses in Liliw, Laguna.</p><span class="tag">Capstone project</span>
+                <div class="links"><a class="btn btn-solid sm" href="https://teryngianna.github.io/liliw-lokal/" target="_blank" rel="noopener">Visit the live site</a></div>
+              </figcaption>
+            </figure>
+            <figure class="proj" id="w-brwtl-web"><img class="zoom" src="assets/web-brwtl-home.jpg" alt="BRWTL Coffee Shop homepage: Bold brews, warm hearts" loading="lazy" data-group="brwtl-web"><figcaption><h3>BRWTL Coffee Shop</h3><p>Website for a café in San Pablo City, matched to its brand and mascot.</p><span class="tag">Client</span><div class="links"><a class="btn btn-solid sm" href="https://www.behance.net/gallery/253838467/BRWTL-BRAND-PORTFOLIO" target="_blank" rel="noopener">See it on Behance</a></div></figcaption></figure>
+            <figure class="proj" id="w-novamind"><img class="zoom" src="assets/web-novamind-cover.jpg" alt="NovaMind landing page: Smarter AI for a smarter future" loading="lazy" data-group="novamind"><img class="zoom" hidden src="assets/web-novamind-1.jpg" alt="NovaMind landing page, part 1 of 3" loading="lazy" data-group="novamind"><img class="zoom" hidden src="assets/web-novamind-2.jpg" alt="NovaMind landing page, part 2 of 3" loading="lazy" data-group="novamind"><img class="zoom" hidden src="assets/web-novamind-3.jpg" alt="NovaMind landing page, part 3 of 3" loading="lazy" data-group="novamind"><figcaption><h3>NovaMind</h3><p>Multi-page website for an AI company, with a dark, glossy look.</p><span class="tag">Interactive prototype</span><div class="links"><a class="btn btn-solid sm" href="https://www.figma.com/proto/QH8nmuwOMzSHfxl9cMLFlL/Nuza_Ma.TerynGianna_L---Interim-2-Multi-Page-Website-Prototype?node-id=2042-2878&amp;p=f&amp;t=wMPubHpinmWKVD5D-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1" target="_blank" rel="noopener">Try the Figma prototype</a></div></figcaption></figure>
+            <figure class="proj" id="w-portfolio">
+              <img class="zoom" src="assets/web-portfolio.jpg" alt="Home page of this portfolio website" loading="lazy" data-group="portfolio">
+              <figcaption><h3>This portfolio</h3><p>Designed around my own brand: hot pink, polka dots, and a lot of personality.</p><span class="tag">Personal</span></figcaption>
+            </figure>
+            <figure class="proj" id="w-nuone">
+              <img class="zoom" src="assets/web-nu-1.jpg" alt="NUOne app on a phone" loading="lazy" data-group="nuone">
+              <img class="zoom" hidden src="assets/web-nu-3.jpg" alt="NUOne login page" loading="lazy" data-group="nuone">
+              <img class="zoom" hidden src="assets/web-nu-4.jpg" alt="NUOne home page" loading="lazy" data-group="nuone">
+              <img class="zoom" hidden src="assets/web-nu-5.jpg" alt="NUOne navigation screens" loading="lazy" data-group="nuone">
+              <img class="zoom" hidden src="assets/web-nu-6.jpg" alt="NUOne app screens" loading="lazy" data-group="nuone">
+              <img class="zoom" hidden src="assets/web-nu-7.jpg" alt="NUOne app icons" loading="lazy" data-group="nuone">
+              <img class="zoom" hidden src="assets/web-nu-8.jpg" alt="NUOne typography and color palette" loading="lazy" data-group="nuone">
+              <img class="zoom" hidden src="assets/web-nu-9.jpg" alt="NUOne mockup on a desk" loading="lazy" data-group="nuone">
+              <img class="zoom" hidden src="assets/web-nu-11.jpg" alt="NUOne mockup in hand" loading="lazy" data-group="nuone">
+              <figcaption><h3>NUOne Student App</h3><p>An all-in-one app for NU students: grades, class schedules, a planner, quizzes, and chat.</p><span class="tag">UI design</span>
+                <div class="links"><a class="btn btn-solid sm" href="https://www.behance.net/gallery/254600635/NUOne-Student-Application-UI-Design" target="_blank" rel="noopener">See it on Behance</a></div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="exp" id="experience">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="hey">the journey so far</span>
+        <h2>Where I’ve worked</h2>
+        <p>From content and film sets to my own small businesses, here’s where I’ve been putting in the work.</p>
+      </div>
+      <div class="jobs">
+        <article class="job">
+          <span class="ttl">Content creator</span>
+          <span class="when">2018 to now</span>
+          <h3>Brand ambassador and micro influencer</h3>
+          <p>Photo and video content for 50+ beauty, lifestyle, tech, and food brands as @aria.not.grande.</p>
+          <div class="brands"><span>7M views on my top TikTok</span><span>1.2M TikTok likes</span></div>
+          <div class="brands"><span>SMART</span><span>Maybelline</span><span>RELX</span><span>Happy Skin</span><span>Hairfix</span><span>Brilliant Skin</span><span>Cloud Beauty</span><span>+ more</span></div>
+        </article>
+        <article class="job">
+          <span class="ttl">Film</span>
+          <span class="when">2025</span>
+          <h3>Writer and director of Siklo</h3>
+          <p>A psychological thriller screened at SM Cinema and featured at Tanglaw Tanghal, Sine Obscura, MMAP CALABARZON Balintataw, and Cinema Primera.</p>
+        </article>
+        <article class="job">
+          <span class="ttl">Photo &amp; video</span>
+          <span class="when">2018 to now</span>
+          <h3>Likha by Teryn Gianna</h3>
+          <p>Where I offer photo, video, hair and makeup, and art services for portraits, prenups, events, and more.</p>
+        </article>
+        <article class="job">
+          <span class="ttl">Web design</span>
+          <span class="when">Freelance</span>
+          <h3>Web designer</h3>
+          <p>Websites for GSD and BRWTL Coffee Shop. Now accepting international website commissions.</p>
+        </article>
+        <article class="job">
+          <span class="ttl">Hair &amp; makeup</span>
+          <span class="when">2022 to now</span>
+          <h3>Hair and makeup artist</h3>
+          <p>Glam for shoots, events, and productions under Likha by Teryn Gianna, and at Studio 53, where I also create content.</p>
+        </article>
+        <article class="job">
+          <span class="ttl">Business owner</span>
+          <span class="when">2018 to now</span>
+          <h3>My own small shops</h3>
+          <p>Styled by Bratz PH (2018 to 2021), Ari’s Cases and Ari’s Closet (2022 to 2023), and Fleurever PH (2025).</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECOGNITION -->
+  <section class="recog" id="recognition">
+    <div class="wrap">
+      <div class="recog-title">
+        <span class="hey">proud moments</span>
+        <h2>Education &amp; recognition</h2>
+        <p>Awards, honors, and certifications from school, film festivals, and contests.</p>
+      </div>
+      <ul class="honors">
+        <li class="edu"><div><b>Bachelor of Multimedia Arts</b><small>Major in Graphic Design, National University Laguna</small></div><span class="chip">2023 to 2027</span></li>
+        <li><div><b>Dean’s Lister</b><small>Sophomore year</small></div><span class="chip">NU Laguna</span></li>
+        <li><div><b>Dean’s Lister</b><small>Junior year</small></div><span class="chip">NU Laguna</span></li>
+        <li><div><b>Adobe Certified Professional</b><small>Graphic Design &amp; Illustration in Adobe Illustrator</small></div><span class="chip">Certified</span></li>
+        <li><div><b>1st Place</b><small>Synergistic Photography Contest</small></div><span class="chip">Photography</span></li>
+        <li><div><b>Film Writer &amp; Director, <em>Siklo</em></b><small>Tanglaw Tanghal</small></div><span class="chip">2025</span></li>
+        <li><div><b>Boses ng Pagbabago Special Award</b><small>Gawad Likha</small></div><span class="chip">2025</span></li>
+        <li><div><b>1st Place, Best Supporting Actor</b><small>Balintataw</small></div><span class="chip">2025</span></li>
+        <li><div><b>2nd Place, Best Live Production</b><small>Gawad Likha</small></div><span class="chip">2026</span></li>
+        <li><div><b>3rd Place, Best Sound Production</b><small>Gawad Likha</small></div><span class="chip">2026</span></li>
+      </ul>
+    </div>
+  </section>
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="hey">let’s work together</span>
+        <h2>What you can hire me for</h2>
+        <p>Tap a service to see what’s included.</p>
+      </div>
+      <div class="svc-pills" id="svc-pills" aria-label="Services"></div>
+      <div class="svc-card" id="svc-card" aria-live="polite">
+        <div>
+          <h3 id="svc-title">Photography</h3>
+          <p class="desc" id="svc-desc"></p>
+          <a class="btn btn-solid" id="svc-ask" data-email href="mailto:arianotgrande.collab@gmail.com">Ask about this</a>
+          <p class="note-free">Every project starts with a free chat about what you need.</p>
+        </div>
+        <div class="inc"><b>What’s included</b><ul id="svc-list"></ul></div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <span class="c-spark a" aria-hidden="true"></span><span class="c-spark b" aria-hidden="true"></span><span class="c-spark c" aria-hidden="true"></span>
+    <div class="wrap c-inner">
+      <span class="c-so">so,</span>
+      <h2>Shall we<br>create<span class="q">?</span></h2>
+      <p class="c-text">Let’s make something worth remembering.</p>
+      <div class="c-btns">
+        <a class="btn btn-lime big" data-email href="mailto:arianotgrande.collab@gmail.com?subject=Project%20inquiry">Email me</a>
+        <button class="btn btn-ghost big" type="button" data-copy>Copy my email</button>
+      </div>
+      <p class="c-mail">arianotgrande.collab@gmail.com</p>
+    </div>
+    <div class="c-badge" aria-hidden="true">
+      <svg class="ring" viewBox="0 0 200 200"><defs><path id="badge-circle" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs><text><textPath href="#badge-circle">OPEN FOR PROJECTS ✦ WORK WITH ARIA ✦</textPath></text></svg>
+      <span class="core"></span>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="f-logo" href="#top" aria-label="Teryn Gianna, back to top">teryn<span>gianna</span></a>
+        <p class="f-tag">A multimedia artist from San Pablo, Laguna, Philippines, creating visuals and stories meant to be remembered.</p>
+        <span class="f-open"><i aria-hidden="true"></i>Open for projects</span>
+      </div>
+      <nav aria-label="Footer">
+        <h3>Explore</h3>
+        <ul class="f-nav">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Say hi</h3>
+        <div class="f-icons">
+          <a href="https://www.instagram.com/aria.not.grande/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@pinkveilari" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.6 2.6 2.4 4.2 5 4.5"/></svg></a>
+          <a href="https://www.linkedin.com/in/teryngianna" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://www.behance.net/teryngianna" target="_blank" rel="noopener" aria-label="Behance">Bē</a>
+          <a data-email href="mailto:arianotgrande.collab@gmail.com?subject=Project%20inquiry" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></a>
+        </div>
+        <a class="f-mail" data-email href="mailto:arianotgrande.collab@gmail.com?subject=Project%20inquiry">arianotgrande.collab@gmail.com</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 Ma. Teryn Gianna L. Nuza</span>
+      <button class="f-top" type="button" id="f-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg>Back to top</button>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog class="search" id="search" aria-label="Search the portfolio">
+  <div class="s-field">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+    <input id="s-input" type="text" inputmode="search" enterkeyhint="search" placeholder="Search projects, tools, or services" autocomplete="off" aria-label="Search" aria-controls="s-res">
+    <button class="s-close" id="s-close">Close</button>
+  </div>
+  <div class="s-body">
+    <div id="s-empty">
+      <p class="s-hint">Try one of these:</p>
+      <div class="s-sugg" id="s-sugg"></div>
+    </div>
+    <p class="s-hint" id="s-none" hidden></p>
+    <ul class="s-res" id="s-res" role="listbox" aria-label="Results"></ul>
+  </div>
+</dialog>
+
+<dialog class="lb" id="lb" aria-label="Image viewer">
+  <div class="lb-wrap">
+    <div class="lb-top">
+      <button class="lb-back" id="lb-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Back</button>
+      <span class="lb-count" id="lb-count" aria-live="polite"></span>
+    </div>
+    <div class="lb-stage" id="lb-stage">
+      <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <img id="lb-img" alt="">
+      <button class="lb-nav lb-next" id="lb-next" aria-label="Next image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+    <div class="lb-cap"><b id="lb-title"></b><p id="lb-text"></p></div>
+  </div>
+</dialog>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// ---------- Photography shoots ----------
+const SHOOTS=[
+ {id:'cocofest',n:26,kind:'Cultural and dance',title:'Coco Fest',text:'A street photography series documenting the energy and movement of street dancers during the Coco Festival. The photos capture spontaneous performances, expressive movement, and the vibrant atmosphere of the celebration.'},
+ {id:'enchanted',n:18,kind:'Pre-birthday',title:'Enchanted',text:'A celebration of femininity, beauty, and the youthful spirit that never fades. Inspired by the dreamy world of fairytales, this pre-birthday session turns 50 into a new chapter of enchantment, with violet blooms, flowing textures, and a timeless sense of wonder.'},
+ {id:'therese',n:19,kind:'Pre-debut',title:'Therese Greys @ 18',text:'Inspired by The Seven Husbands of Evelyn Hugo, this pre-debut series explores old-Hollywood glamour, elegance, and cinematic portraiture through a modern lens.'},
+ {id:'jhobelle',n:20,kind:'Prenup',title:'Jhobelle & Rhovin',text:'A romantic portrait series inspired by Beauty and the Beast, blending fairytale elements with intimate moments to create a timeless visual story.'},
+ {id:'ashiana',n:26,kind:'Conceptual',title:'Ashiana',text:'A conceptual portrait series created in solidarity with victims and survivors of sexual violence. Through intimate imagery and a sense of embrace, the series aims to communicate comfort, compassion, and the reminder that no survivor has to face their experience alone.'},
+ {id:'turbina',n:10,kind:'Street',title:'Isang Araw sa Turbina',text:'A visual documentation of everyday life around Turbina, capturing people, places, and fleeting moments within the environment.'},
+ {id:'simoy',n:8,kind:'Landscape',title:'Simoy ng Pasko sa San Pabluy',text:'A visual exploration of San Pablo during the Christmas season, capturing its atmosphere, surroundings, and seasonal details through light, color, and composition.'},
+ {id:'aziel',n:10,kind:'Milestone',title:'Aziel Taylee',text:'A portrait series capturing the innocence, personality, and fleeting moments of early childhood during an important milestone.'}
+];
+const esc=t=>t.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+
+(function(){
+  const grid=document.getElementById('shoots');
+  SHOOTS.forEach(s=>{
+    const b=document.createElement('button');
+    b.className='shoot'; b.id='shoot-'+s.id;
+    b.innerHTML=`<img src="assets/photo-${s.id}-1-sm.jpg" alt="" loading="lazy"><span class="kind">${s.kind}</span><h3>${esc(s.title)}</h3><span class="count">${s.n} photos</span>`;
+    b.setAttribute('aria-label',`View ${s.title}, ${s.kind.toLowerCase()} photography, ${s.n} photos`);
+    b.addEventListener('click',()=>{
+      const items=[];
+      for(let i=1;i<=s.n;i++) items.push({src:`assets/photo-${s.id}-${i}.jpg`,alt:`${s.title}, photo ${i} of ${s.n}`,title:s.title,text:s.text});
+      LB.open(items,0,b);
+    });
+    grid.appendChild(b);
+  });
+})();
+
+// ---------- Lightbox ----------
+const LB=(function(){
+  const dlg=document.getElementById('lb'), img=document.getElementById('lb-img');
+  const title=document.getElementById('lb-title'), text=document.getElementById('lb-text'), count=document.getElementById('lb-count');
+  const prev=document.getElementById('lb-prev'), next=document.getElementById('lb-next');
+  let items=[], i=0, opener=null, pushed=false;
+  function show(){
+    const it=items[i];
+    img.style.animation='none'; img.offsetHeight; img.style.animation='';
+    img.src=it.src; img.alt=it.alt||'';
+    title.textContent=it.title||it.alt||'';
+    text.textContent=it.text||''; text.hidden=!it.text;
+    const many=items.length>1;
+    prev.hidden=next.hidden=!many;
+    count.textContent=many?`${i+1} of ${items.length}`:'';
+  }
+  function open(list,start,from){
+    items=list; i=start||0; opener=from||null; show();
+    if(!dlg.open) dlg.showModal();
+    if(!pushed){history.pushState({lb:1},'');pushed=true;}
+    document.getElementById('lb-back').focus();
+  }
+  function close(fromPop){
+    if(!dlg.open) return;
+    dlg.close();
+    if(pushed && !fromPop){pushed=false;history.back();}
+    pushed=false;
+    if(opener) opener.focus();
+  }
+  function go(d){ if(items.length>1){ i=(i+d+items.length)%items.length; show(); } }
+  document.getElementById('lb-back').addEventListener('click',()=>close());
+  prev.addEventListener('click',()=>go(-1));
+  next.addEventListener('click',()=>go(1));
+  dlg.addEventListener('cancel',e=>{e.preventDefault();close();});
+  dlg.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')go(-1);if(e.key==='ArrowRight')go(1);});
+  addEventListener('popstate',()=>{ if(dlg.open){pushed=false;close(true);} });
+  // swipe on phones
+  let x0=null;
+  const stage=document.getElementById('lb-stage');
+  stage.addEventListener('touchstart',e=>{x0=e.touches[0].clientX},{passive:true});
+  stage.addEventListener('touchend',e=>{ if(x0===null)return; const dx=e.changedTouches[0].clientX-x0; if(Math.abs(dx)>50) go(dx<0?1:-1); x0=null; });
+  // tap the dark area to close
+  stage.addEventListener('click',e=>{ if(e.target===stage) close(); });
+  return {open,close};
+})();
+
+// every .zoom image opens the lightbox with its group
+document.querySelectorAll('.zoom').forEach(el=>{
+  el.tabIndex=0; el.setAttribute('role','button');
+  el.setAttribute('aria-label','View larger: '+(el.alt||'image'));
+  const openIt=()=>{
+    const g=el.dataset.group;
+    const list=[...document.querySelectorAll(g?`.zoom[data-group="${g}"]`:'.zoom')].filter(x=>!g||x.dataset.group===g);
+    if(list.some(x=>x.dataset.i)) list.sort((a,b)=>(+a.dataset.i||0)-(+b.dataset.i||0));
+    const items=list.map(x=>{
+      const fig=x.closest('figure'); const cap=fig&&fig.querySelector('figcaption');
+      const h=cap&&cap.querySelector('h3');
+      return {src:x.currentSrc||x.src,alt:x.alt,title:h?h.textContent:(cap?cap.firstChild.textContent.trim():x.alt)};
+    });
+    LB.open(items,list.indexOf(el),el);
+  };
+  el.addEventListener('click',openIt);
+  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openIt();}});
+});
+
+document.querySelectorAll('[data-flip]').forEach(b=>b.addEventListener('click',()=>{const c=document.querySelector('#'+b.dataset.flip+' .bb-cover .zoom'); if(c) c.click();}));
+
+// ---------- Videos ----------
+(function(){
+  const loops=[...document.querySelectorAll('video.loop')];
+  if(!reduce && 'IntersectionObserver' in window){
+    const io=new IntersectionObserver(es=>es.forEach(e=>{
+      const v=e.target;
+      if(e.isIntersecting && !v.closest('[hidden]')){ v.play().catch(()=>{}); } else if(!e.isIntersecting){ v.pause(); }
+    }),{threshold:.5});
+    loops.forEach(v=>io.observe(v));
+  }
+  document.querySelectorAll('video').forEach(v=>v.addEventListener('play',()=>{
+    document.querySelectorAll('video').forEach(o=>{ if(o!==v && !o.paused && !o.muted) o.pause(); });
+    if(!v.muted) loops.forEach(o=>{ if(o!==v) o.muted=true; });
+  }));
+})();
+
+// ---------- Search ----------
+const INDEX=[
+  ...SHOOTS.map(s=>({t:s.title,k:'Photography',tab:'photo',el:'shoot-'+s.id,w:s.kind+' photography portrait photo shoot '+s.text})),
+  {t:'Siklo',k:'Film',tab:'film',el:'w-siklo',w:'short film psychological thriller director writer award sm cinema trailer video'},
+  {t:'The Last Draft',k:'Film',tab:'film',el:'w-lastdraft',w:'interactive short film video'},
+  {t:'Out of Tempo Out of Time',k:'Film',tab:'film',el:'w-outoftempo',w:'music video mv'},
+  {t:'BRWTL Commercial',k:'Film',tab:'film',el:'w-brwtl-ad',w:'ad advertisement coffee brand campaign video'},
+  {t:'Last Summer',k:'Game',tab:'film',el:'w-lastsummer',w:'visual novel game writer director story'},
+  {t:'Ako To',k:'Film',tab:'film',el:'w-akoto',w:'short film video'},
+  {t:'When I Grow Up',k:'Film',tab:'film',el:'w-growup',w:'short video film ai artist'},
+  {t:'Casting Call',k:'Film',tab:'film',el:'w-castingcall',w:'live show comedy production circus casting makeup bts award'},
+  {t:'Athens’ Dollhouse',k:'Art',tab:'art',el:'w-athens',w:'digital illustration ibis paint drawing palette process coquette'},
+  {t:'Digital art',k:'Art',tab:'art',el:'w-digital',w:'digital illustration drawing portraits the cure sophia mary quert summer dsyr sir smilky'},
+  {t:'Traditional art',k:'Art',tab:'art',el:'w-traditional',w:'painting mural traditional acrylic canvas tote bag pipiliin audrey hepburn waterfalls ocean'},
+  {t:'3D Isometric Room',k:'3D',tab:'3d',el:'w-room',w:'blender 3d render room modeling lighting'},
+  {t:'3D animations',k:'3D',tab:'3d',el:'w-anim',w:'blender animation gumball car barbie home cosmetics lipstick video'},
+  {t:'BRWTL brand guidelines',k:'Branding',tab:'brand',el:'w-brwtl-brand',w:'logo mascot brand identity coffee character guidelines 12epublic'},
+  {t:'Fleurever',k:'Branding',tab:'brand',el:'w-fleurever',w:'flower logo brand identity pink olive likha'},
+  {t:'Graphic design',k:'Graphic Design',tab:'gd',el:'w-gd',w:'poster wicked defying gravity mirrorball nothing new lucid dreams coffee please brochure editorial print'},
+  {t:'Content creation',k:'Content',tab:'cc',el:'w-cc',w:'tiktok instagram ugc makeup review tutorial lifestyle brand ambassador influencer views'},
+  {t:'Hair & makeup',k:'Hair & Makeup',tab:'hm',el:'w-hm',w:'hmua glam makeup hair graduation likha'},
+  {t:'BRWTL Coffee Shop website',k:'Web',tab:'web',el:'w-brwtl-web',w:'website web design coffee'},
+  {t:'GetSitDone',k:'Web',tab:'web',el:'w-gsd',w:'gsd ux redesign sitemap user flow wireframe website live'},
+  {t:'Liliw Lokal',k:'Web',tab:'web',el:'w-liliw',w:'website local business tourism laguna capstone'},
+  {t:'NovaMind',k:'Web',tab:'web',el:'w-novamind',w:'figma prototype multi page interactive landing page ai concept website'},
+  {t:'This portfolio',k:'Web',tab:'web',el:'w-portfolio',w:'portfolio website personal brand'},
+  {t:'NUOne Student App',k:'UI',tab:'web',el:'w-nuone',w:'mobile app ui figma student nu school grades chat quiz behance'},
+  {t:'About me',k:'About',el:'about',w:'aria teryn bio student nu laguna adapt style'},
+  {t:'Tools and skills',k:'Tools',el:'kit',w:'photoshop illustrator figma premiere lightroom blender canva capcut software skills'},
+  {t:'Work experience',k:'Experience',el:'experience',w:'content creator brand ambassador business owner makeup hair studio 53 likha'},
+  {t:'Awards and recognition',k:'Awards',el:'recognition',w:'dean’s lister adobe certified gawad likha balintataw synergistic award'},
+  {t:'Services',k:'Hire me',el:'services',w:'hire services photography video branding web content creative direction makeup'},
+  {t:'Writing',k:'Service',el:'services',w:'writer scripts copy captions concepts'},
+  {t:'Contact',k:'Contact',el:'contact',w:'email instagram linkedin behance work with me'}
+];
+const SUGG=['Prenup','Film','Logo','Blender','Website','Painting'];
+(function(){
+  const dlg=document.getElementById('search'), input=document.getElementById('s-input');
+  const res=document.getElementById('s-res'), empty=document.getElementById('s-empty'), none=document.getElementById('s-none');
+  const sugg=document.getElementById('s-sugg');
+  let on=-1, cur=[];
+  SUGG.forEach(w=>{const b=document.createElement('button');b.textContent=w;b.addEventListener('click',()=>{input.value=w;run();input.focus();});sugg.appendChild(b);});
+  function run(){
+    const q=input.value.trim().toLowerCase();
+    res.innerHTML=''; on=-1;
+    empty.hidden=!!q; none.hidden=true;
+    if(!q){cur=[];return;}
+    const words=q.split(/\s+/);
+    cur=INDEX.filter(x=>{const hay=(x.t+' '+x.k+' '+x.w).toLowerCase();return words.every(w=>hay.includes(w));})
+      .sort((a,b)=>(b.t.toLowerCase().includes(q))-(a.t.toLowerCase().includes(q)));
+    if(!cur.length){none.hidden=false;none.textContent=`Nothing matches “${input.value.trim()}”. Try a project name, a tool like Blender, or a service like branding.`;return;}
+    cur.forEach((x,n)=>{
+      const li=document.createElement('li');
+      const b=document.createElement('button'); b.setAttribute('role','option');
+      b.innerHTML=`<b>${esc(x.t)}</b><span>${x.k}</span>`;
+      b.addEventListener('click',()=>go(x));
+      li.appendChild(b); res.appendChild(li);
+    });
+  }
+  function mark(n){const bs=res.querySelectorAll('button');bs.forEach(b=>b.classList.remove('on'));if(bs[n]){bs[n].classList.add('on');bs[n].scrollIntoView({block:'nearest'});}on=n;}
+  function go(x){
+    dlg.close();
+    if(x.tab) selectTab('t-'+x.tab,false);
+    const el=document.getElementById(x.el);
+    if(!el) return;
+    el.scrollIntoView({behavior:reduce?'auto':'smooth',block:x.tab?'center':'start'});
+    if(x.tab){el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash');}
+  }
+  function open(){input.value='';run();dlg.showModal();input.focus();}
+  document.querySelectorAll('[data-open-search]').forEach(b=>b.addEventListener('click',open));
+  document.getElementById('s-close').addEventListener('click',()=>dlg.close());
+  dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();});
+  input.addEventListener('input',run);
+  input.addEventListener('keydown',e=>{
+    const n=res.children.length;
+    if(e.key==='ArrowDown'&&n){e.preventDefault();mark((on+1)%n);}
+    if(e.key==='ArrowUp'&&n){e.preventDefault();mark((on-1+n)%n);}
+    if(e.key==='Enter'&&cur.length){e.preventDefault();go(cur[Math.max(on,0)]);}
+  });
+  addEventListener('keydown',e=>{
+    if(e.key==='/'&&!dlg.open&&!document.getElementById('lb').open&&!/input|textarea/i.test(document.activeElement.tagName)){e.preventDefault();open();}
+  });
+})();
+
+// ---------- Sparkle burst on tap ----------
+(function(){
+  if(reduce) return;
+  const colors=['#DBE586','#B9C9E7','#DB1374','#FFF4F9'];
+  document.addEventListener('pointerdown',e=>{
+    const t=e.target.closest('.btn,[role=tab],.socials a,.shoot,.makes li,.lb-back,.lb-nav,.search-btn,.s-sugg button,.stage,.svc-pills button,.f-icons a,.f-top,.q,.note .ps');
+    if(!t) return;
+    for(let k=0;k<7;k++){
+      const s=document.createElement('i'); s.className='spark';
+      const a=(Math.PI*2*k/7)+Math.random()*.5, d=26+Math.random()*22;
+      s.style.left=e.clientX+'px'; s.style.top=e.clientY+'px';
+      s.style.setProperty('--dx',Math.cos(a)*d+'px'); s.style.setProperty('--dy',Math.sin(a)*d+'px');
+      s.style.setProperty('--c',colors[k%colors.length]);
+      (t.closest('dialog')||document.body).appendChild(s); setTimeout(()=>s.remove(),650);
+    }
+  });
+})();
+
+// ---------- Email: open mail app and copy the address ----------
+const EMAIL='arianotgrande.collab@gmail.com';
+function toast(msg){
+  const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('on');
+  clearTimeout(toast.h); toast.h=setTimeout(()=>t.classList.remove('on'),3200);
+}
+function copyEmail(){
+  if(navigator.clipboard&&window.isSecureContext){return navigator.clipboard.writeText(EMAIL).then(()=>true,()=>false);}
+  const ta=document.createElement('textarea'); ta.value=EMAIL; ta.style.position='fixed'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select(); let ok=false; try{ok=document.execCommand('copy');}catch(e){} ta.remove();
+  return Promise.resolve(ok);
+}
+document.addEventListener('click',e=>{
+  const mail=e.target.closest('[data-email]');
+  if(mail){copyEmail().then(ok=>toast(ok?'Opening your email app. My email is copied too.':'Opening your email app...'));}
+  const cp=e.target.closest('[data-copy]');
+  if(cp){copyEmail().then(ok=>toast(ok?'Copied! '+EMAIL:'My email: '+EMAIL));}
+});
+document.getElementById('f-top').addEventListener('click',()=>scrollTo({top:0,behavior:reduce?'auto':'smooth'}));
+
+// ---------- Services ----------
+const SERVICES=[
+ {n:'Photography',d:'Portraits, editorials, prenups, events, and product shoots, styled and directed from start to finish.',i:['Concept and mood board','Posing and direction on set','Edited final photos']},
+ {n:'Video & film',d:'Short films, music videos, commercials, and brand videos with a story behind them.',i:['Concept and script','Directing and shooting','Editing and final cut']},
+ {n:'Writing',d:'Words that sound like your brand, from film scripts to the caption under your next post.',i:['Film and video scripts','Campaign concepts','Captions and brand copy']},
+ {n:'Branding',d:'Logos and visual identities that give your brand a look people remember.',i:['Logo design','Colors and type','Brand guidelines and visuals for social media']},
+ {n:'Web & UI/UX',d:'Websites planned around your visitors, designed to match your brand, and launched live.',i:['Sitemap and user flows','Wireframes and UI design','Launch on the web']},
+ {n:'Content creation',d:'Photo and video content made for how people scroll, for beauty, lifestyle, tech, and food brands.',i:['Product and lifestyle content','Short-form video','Brand ambassador posts']},
+ {n:'Hair & makeup',d:'Glam for shoots, events, and productions, matched to the look and the lighting.',i:['Editorial and shoot makeup','Event glam','Hairstyling']},
+ {n:'Creative direction',d:'Turning a brief into a clear look, mood, and plan your whole team can follow.',i:['Mood boards and styling','Casting and locations','On-set direction']}
+];
+(function(){
+  const pills=document.getElementById('svc-pills'), card=document.getElementById('svc-card');
+  const title=document.getElementById('svc-title'), desc=document.getElementById('svc-desc'), list=document.getElementById('svc-list'), ask=document.getElementById('svc-ask');
+  function show(k,animate){
+    const s=SERVICES[k];
+    pills.querySelectorAll('button').forEach((b,j)=>b.setAttribute('aria-pressed',j===k));
+    title.textContent=s.n; desc.textContent=s.d;
+    list.innerHTML=s.i.map(x=>`<li>${esc(x)}</li>`).join('');
+    ask.textContent='Ask about '+s.n.toLowerCase();
+    ask.href=`mailto:${EMAIL}?subject=${encodeURIComponent('Inquiry: '+s.n)}`;
+    if(animate&&!reduce){card.classList.remove('swap');void card.offsetWidth;card.classList.add('swap');}
+  }
+  SERVICES.forEach((s,k)=>{
+    const b=document.createElement('button'); b.type='button'; b.textContent=s.n;
+    b.addEventListener('click',()=>show(k,true)); pills.appendChild(b);
+  });
+  show(0,false);
+})();
+// Envelope: starts closed, opens shortly after it scrolls into view, tap to toggle
+(function(){
+  const stage=document.getElementById('stage'), hint=stage.querySelector('.hint');
+  let busy=false, touched=false;
+  function set(open){
+    if(busy) return;
+    busy=true; setTimeout(()=>busy=false, reduce?50:(open?2000:1400));
+    stage.classList.toggle('open',open);
+    stage.setAttribute('aria-pressed',open);
+    hint.textContent=open?'Tap to close':'Tap to open';
+  }
+  const toggle=()=>{touched=true;set(!stage.classList.contains('open'));};
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(e=>{
+      if(e[0].isIntersecting){io.disconnect();setTimeout(()=>{if(!touched)set(true);},500);}
+    },{threshold:.45});
+    io.observe(stage);
+  } else set(true);
+  stage.addEventListener('click',toggle);
+  stage.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();}});
+})();
+
+// Question marks spin when tapped
+document.addEventListener('click',e=>{
+  const q=e.target.closest('.q,.note .ps'); if(!q||reduce) return;
+  q.classList.remove('spin'); void q.offsetWidth; q.classList.add('spin');
+});
+
+// Work tabs
+const TABS=[...document.querySelectorAll('[role=tab]')];
+function selectTab(id,focus=true){
+  TABS.forEach(t=>{
+    const on=t.id===id;
+    t.setAttribute('aria-selected',on);
+    t.tabIndex=on?0:-1;
+    document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+    if(on&&focus)t.focus();
+  });
+}
+TABS.forEach((t,i)=>{
+  t.addEventListener('click',()=>selectTab(t.id));
+  t.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight')selectTab(TABS[(i+1)%TABS.length].id);
+    if(e.key==='ArrowLeft')selectTab(TABS[(i-1+TABS.length)%TABS.length].id);
+  });
+});
+</script>
+</body>
+</html>
