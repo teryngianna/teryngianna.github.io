@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>try{var t=localStorage.getItem("tg-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <title>Teryn Gianna Nuza | Multimedia Artist</title>
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
@@ -47,7 +48,7 @@
 *,*::before,*::after{box-sizing:border-box}
 :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
-body{margin:0;background:var(--surface);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6}
+body{margin:0;background:var(--surface);color:var(--ink);transition:background-color .35s,color .35s;font-family:var(--body);font-size:1.0625rem;line-height:1.6}
 img{max-width:100%;height:auto;display:block}
 [hidden]{display:none!important}
 a{color:inherit}
@@ -150,6 +151,7 @@ section{padding-block:clamp(4rem,9vw,7rem)}
 .makes{list-style:none;padding:0;margin:1.6rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem}
 .makes li{background:var(--card);border:2px solid var(--berry);border-radius:999px;padding:.3rem .9rem;font-weight:700;font-size:.95rem;color:var(--ink)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .about .hey{color:var(--hot)}}
+:root[data-theme="dark"] .about .hey{color:var(--hot)}
 @media (max-width:820px){.about .wrap{grid-template-columns:1fr}.snap{max-width:330px}.a1{left:-4%}.a2{right:-4%}.a4{left:-5%}}
 
 /* envelope */
@@ -299,7 +301,7 @@ section{padding-block:clamp(4rem,9vw,7rem)}
 .recog-title{position:sticky;top:110px}
 .recog-title .hey{display:block;font-family:var(--script);color:var(--lime);font-size:clamp(2.2rem,4.5vw,3.2rem);transform:rotate(-5deg);transform-origin:left;margin-bottom:-.1em}
 .recog-title h2{font-size:clamp(3rem,7vw,5.6rem);line-height:.88;letter-spacing:-.04em;text-transform:uppercase;color:var(--paper)}
-.recog-title p{color:var(--blush);margin:1.2rem 0 0;max-width:34ch}
+.recog-title p{color:#FFD6EA;margin:1.2rem 0 0;max-width:34ch}
 .honors{list-style:none;margin:0;padding:0;display:grid;gap:.8rem}
 .honors li{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:#FFE3F1;color:var(--berry);border-radius:999px;padding:.6rem .6rem .6rem 1.5rem;border:2px solid var(--berry);box-shadow:4px 4px 0 rgba(0,0,0,.25);transition:transform .2s cubic-bezier(.3,1.6,.5,1)}
 .honors li:nth-child(4n+3){background:var(--blue)}
@@ -395,6 +397,31 @@ section{padding-block:clamp(4rem,9vw,7rem)}
 .toast.on{transform:translate(-50%,0);opacity:1;visibility:visible}
 .contact .btn-ghost{background:transparent;color:var(--paper);border-color:var(--paper)}
 @media (hover:hover){.contact .btn-ghost:hover{background:var(--paper);color:var(--hot)}}
+
+/* theme toggle */
+.theme-btn{position:relative;width:44px;height:44px;flex:none;border-radius:50%;border:2px solid var(--paper);background:transparent;color:var(--paper);cursor:pointer;overflow:hidden;display:grid;place-items:center;transition:background-color .2s,color .2s,transform .2s cubic-bezier(.3,1.6,.5,1)}
+.theme-btn svg{position:absolute;width:21px;height:21px;transition:transform .45s cubic-bezier(.3,1.4,.5,1),opacity .3s}
+.theme-btn .moon{transform:translateY(140%) rotate(-60deg);opacity:0}
+.is-dark .theme-btn .sun{transform:translateY(-140%) rotate(90deg);opacity:0}
+.is-dark .theme-btn .moon{transform:none;opacity:1}
+@media (hover:hover){.theme-btn:hover{background:var(--paper);color:var(--hot);transform:rotate(-12deg)}}
+.theme-btn:active{transform:scale(.9)}
+
+@media (max-width:480px){
+  .nav{gap:.5rem}
+  .logo{font-size:1.1rem}.logo span{font-size:1.35rem}
+  .theme-btn,.search-btn{width:40px;height:40px;padding:0;justify-content:center}
+  .top .btn-lime{padding:.55rem .9rem;font-size:.85rem}
+}
+
+/* parallax */
+.px{translate:0 var(--py,0px);will-change:translate}
+.hero{background-position:0 var(--dots,0px),26px calc(26px + var(--dots,0px))}
+.contact{background-position:0 var(--dots,0px),24px calc(24px + var(--dots,0px))}
+.exp::before,.recog::before,#services::before{top:-12%;bottom:-12%;translate:0 var(--bgy,0px);will-change:translate}
+@media (max-width:760px){.exp::before{top:-6%}}
+@media (prefers-reduced-motion: reduce){.px,.exp::before,.recog::before,#services::before{translate:none!important}}
+
 /* ---------- interactions ---------- */
 .btn{position:relative;box-shadow:0 0 0 var(--berry);transition:transform .18s cubic-bezier(.3,1.6,.5,1),box-shadow .18s,background-color .18s,color .18s}
 .btn.sm{padding:.5rem 1rem;font-size:.9rem}
@@ -653,6 +680,7 @@ dialog.lb::backdrop{background:rgba(48,4,28,.96)}
       <a href="#work">Work</a>
       <a href="#kit">Tools</a>
       <button class="search-btn" type="button" data-open-search aria-label="Search the portfolio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span class="lbl">Search</span><kbd>/</kbd></button>
+      <button class="theme-btn" type="button" id="theme-btn" aria-label="Switch to dark mode"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg><svg class="moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1Z"/></svg></button>
       <a class="btn btn-lime" href="#contact">Work with me</a>
     </nav>
   </div>
@@ -671,14 +699,14 @@ dialog.lb::backdrop{background:rgba(48,4,28,.96)}
           <a class="btn btn-ghost" data-email href="mailto:arianotgrande.collab@gmail.com?subject=Project%20inquiry">Email me</a>
         </div>
       </div>
-      <div class="frame">
+      <div class="frame px" data-speed=".12">
         <div class="shot" aria-hidden="true"></div>
         <div class="pop"><img src="assets/hero-cutout.webp" alt="Teryn Gianna in a blonde braided wig, pearls, and a polka dot top, holding a pink tablet" width="1100" height="1228" fetchpriority="high"></div>
         <div class="vf" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
         <div class="rec" aria-hidden="true"><b></b>REC</div>
-        <div class="sticker s1"><strong>50+</strong>brands worked with</div>
-        <div class="sticker s2">Adobe Certified<br>Professional</div>
-        <div class="sticker s3">Award-winning<br>short film</div>
+        <div class="sticker s1 px" data-speed="-.1"><strong>50+</strong>brands worked with</div>
+        <div class="sticker s2 px" data-speed=".08">Adobe Certified<br>Professional</div>
+        <div class="sticker s3 px" data-speed="-.06">Award-winning<br>short film</div>
       </div>
     </div>
   </section>
@@ -695,7 +723,7 @@ dialog.lb::backdrop{background:rgba(48,4,28,.96)}
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="wrap">
-      <div class="snap">
+      <div class="snap px" data-speed=".06">
         <span class="tape" aria-hidden="true"></span>
         <figure class="polaroid" style="margin:0">
           <img src="assets/about-aria.jpg" alt="Aria in pink cat-eye glasses, a lilac top, and a white headband against a pink wall" width="1100" height="1100" loading="lazy">
@@ -1287,7 +1315,7 @@ dialog.lb::backdrop{background:rgba(48,4,28,.96)}
   </section>
   <!-- CONTACT -->
   <section class="contact" id="contact">
-    <span class="c-spark a" aria-hidden="true"></span><span class="c-spark b" aria-hidden="true"></span><span class="c-spark c" aria-hidden="true"></span>
+    <span class="c-spark a px" data-speed=".18" aria-hidden="true"></span><span class="c-spark b px" data-speed="-.14" aria-hidden="true"></span><span class="c-spark c px" data-speed=".1" aria-hidden="true"></span>
     <div class="wrap c-inner">
       <span class="c-so">so,</span>
       <h2>Shall we<br>create<span class="q">?</span></h2>
@@ -1298,7 +1326,7 @@ dialog.lb::backdrop{background:rgba(48,4,28,.96)}
       </div>
       <p class="c-mail">arianotgrande.collab@gmail.com</p>
     </div>
-    <div class="c-badge" aria-hidden="true">
+    <div class="c-badge px" data-speed=".1" aria-hidden="true">
       <svg class="ring" viewBox="0 0 200 200"><defs><path id="badge-circle" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs><text><textPath href="#badge-circle">OPEN FOR PROJECTS ✦ WORK WITH ARIA ✦</textPath></text></svg>
       <span class="core"></span>
     </div>
@@ -1471,6 +1499,51 @@ document.querySelectorAll('.zoom').forEach(el=>{
 });
 
 document.querySelectorAll('[data-flip]').forEach(b=>b.addEventListener('click',()=>{const c=document.querySelector('#'+b.dataset.flip+' .bb-cover .zoom'); if(c) c.click();}));
+
+// ---------- Theme toggle ----------
+(function(){
+  const root=document.documentElement, btn=document.getElementById('theme-btn'), mq=matchMedia('(prefers-color-scheme: dark)');
+  const dark=()=>root.dataset.theme? root.dataset.theme==='dark' : mq.matches;
+  function sync(){
+    const d=dark(); root.classList.toggle('is-dark',d);
+    btn.setAttribute('aria-label',d?'Switch to light mode':'Switch to dark mode');
+    btn.title=d?'Light mode':'Dark mode';
+  }
+  btn.addEventListener('click',()=>{
+    const next=dark()?'light':'dark'; root.dataset.theme=next;
+    try{localStorage.setItem('tg-theme',next)}catch(e){}
+    sync();
+  });
+  mq.addEventListener&&mq.addEventListener('change',sync);
+  sync();
+})();
+
+// ---------- Parallax ----------
+(function(){
+  if(reduce) return;
+  const items=[...document.querySelectorAll('.px')].map(el=>({el,sp:parseFloat(el.dataset.speed)||0}));
+  const bgs=[...document.querySelectorAll('.exp,.recog,#services')];
+  const hero=document.querySelector('.hero'), contact=document.getElementById('contact');
+  let ticking=false;
+  function frame(){
+    ticking=false;
+    const vh=innerHeight, mid=vh/2;
+    items.forEach(({el,sp})=>{
+      const host=el.closest("section")||el; const r=host.getBoundingClientRect();
+      if(r.bottom<-200||r.top>vh+200) return;
+      const c=r.top+r.height/2; el.style.setProperty('--py',((c-mid)*-sp).toFixed(1)+'px');
+    });
+    bgs.forEach(sec=>{
+      const r=sec.getBoundingClientRect(); if(r.bottom<0||r.top>vh) return;
+      const max=r.height*.1; const v=Math.max(-max,Math.min(max,(r.top+r.height/2-mid)*-.12));
+      sec.style.setProperty('--bgy',v.toFixed(1)+'px');
+    });
+    const hr=hero.getBoundingClientRect(); if(hr.bottom>0) hero.style.setProperty('--dots',(hr.top*-.35).toFixed(1)+'px');
+    const cr=contact.getBoundingClientRect(); if(cr.top<vh&&cr.bottom>0) contact.style.setProperty('--dots',((cr.top-vh)*.25).toFixed(1)+'px');
+  }
+  const req=()=>{if(!ticking){ticking=true;requestAnimationFrame(frame);}};
+  addEventListener('scroll',req,{passive:true}); addEventListener('resize',req); frame();
+})();
 
 // ---------- Videos ----------
 (function(){
